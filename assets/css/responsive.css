@@ -98,6 +98,12 @@
 
 /* Medium screen  */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .project-box {
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
+
     .services-one__inner {
         padding: 60px 40px 40px;
     }
@@ -417,6 +423,11 @@
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+        .project-box {
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
 
     .mobile-nav__content .logo-box img {
         width: 100px;
@@ -798,6 +809,10 @@
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+        .project-box {
+    margin-bottom: 40px;
+    padding: 0px 15px;
+}
 
     .main-menu .mobile-nav__toggler {
         font-size: 25px;
@@ -2149,7 +2164,12 @@
 
 }
 
-
+@media only screen and (max-width: 576px) {
+    .project-box {
+        margin-bottom: 40px;
+        padding: 0px 15px;
+    }
+}
 
 
 @media only screen and (min-width: 1320px) and (max-width: 1550px) {

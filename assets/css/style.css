@@ -349,6 +349,26 @@
  .section-title-three__title .split-line {
    text-transform: none;
  }
+  .api-list
+  {
+    margin-top: 60px;
+  }
+
+ .project-box
+ {
+  margin-bottom: 50px;
+  padding: 0px;
+ }
+ .project-one__content
+ {
+  justify-content: flex-start !important;
+  position: relative;
+ }
+
+ .api-list .project-one__single
+ {
+margin-bottom: 0 !important;
+ }
 
  .thm-btn {
    position: relative;
