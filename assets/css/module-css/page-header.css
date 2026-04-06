@@ -1,0 +1,115 @@
+/*--------------------------------------------------------------
+# Page Header
+--------------------------------------------------------------*/
+.page-header {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.page-header__shape-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.05;
+    animation: leftRight 4s ease-in-out infinite;
+    z-index: -1;
+}
+
+.page-header__shape-1 img {
+    width: auto;
+}
+
+.page-header__img-1 {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    animation: topBottom 3s ease-in-out infinite;
+}
+
+.page-header__img-1 img {
+    width: auto;
+}
+
+.page-header__inner {
+    position: relative;
+    display: flex;
+    padding: 130px 0 90px;
+    z-index: 15;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header__inner h3 {
+    font-size: 60px;
+    color: #ffff;
+    line-height: 70px;
+    font-weight: 600;
+    letter-spacing: -1.8px;
+    margin-bottom: 15px;
+}
+.page-header__inner p 
+{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.thm-breadcrumb__inner {
+    position: relative;
+    display: block;
+}
+
+.thm-breadcrumb {
+    position: relative;
+    display: block;
+}
+
+.thm-breadcrumb li {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #fff;
+    font-family: var(--erepair-font-2);
+    text-transform: capitalize;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.thm-breadcrumb li+li {
+    margin-left: 5px;
+}
+
+.thm-breadcrumb li a {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #fff;
+    font-family: var(--erepair-font-2);
+    text-transform: capitalize;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.thm-breadcrumb li:hover a {
+    color: var(--erepair-base);
+    opacity: 1;
+}
+
+.thm-breadcrumb li span {
+    font-size: 12px;
+    color: var(--erepair-base);
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

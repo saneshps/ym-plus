@@ -1,0 +1,441 @@
+/*--------------------------------------------------------------
+# Contact One
+--------------------------------------------------------------*/
+.contact-and-counter {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.contact-and-counter__inner {
+    position: relative;
+    display: block;
+    max-width: 1410px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 40px 0 60px;
+}
+
+.contact-one {
+    position: relative;
+    display: block;
+    padding-bottom: 120px;
+    z-index: 2;
+    margin: 70px 0 0 0;
+}
+
+.contact-one__left {
+    position: relative;
+    display: block;
+    margin-right: 30px;
+    margin-left: 60px;
+}
+
+.contact-one__img {
+    position: relative;
+    display: block;
+}
+
+.contact-one__img img {
+    width: 100%;
+    border-radius: 20px;
+    filter: grayscale(1);
+    opacity: .6;
+}
+
+.contact-one__right {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.contact-one__form-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -1.44px;
+    color: var(--erepair-white);
+    text-transform: capitalize;
+    margin-bottom: 29px;
+}
+
+.contact-one__form {
+    position: relative;
+    display: block;
+}
+
+.contact-one__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.contact-one__input-box input[type="text"],
+.contact-one__input-box input[type="email"] {
+    height: 50px;
+    width: 100%;
+    background-color: #232323;
+    border: 1px solid #6E777D;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--erepair-white);
+    display: block;
+    border-radius: 20px;
+}
+
+.contact-one__input-box .select-box {
+    width: 100%;
+}
+
+.contact-one__input-box textarea {
+    height: 120px;
+    width: 100%;
+    background-color: #232323;
+    border: 1px solid #6E777D;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--erepair-white);
+    display: block;
+    border-radius: 20px;
+}
+
+.contact-one__input-box .nice-select {
+    height: 50px;
+    width: 100%;
+    background-color: #232323;
+    border: 1px solid #454545;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    color: #b4b4b4;
+    display: block;
+    font-weight: 400;
+    border-radius: 20px;
+    float: none;
+}
+
+.contact-one__input-box .nice-select:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #919191;
+    border-right: 2px solid #919191;
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.contact-one__input-box .nice-select .option {
+    color: var(--erepair-white);
+}
+
+.contact-one__input-box .nice-select .list {
+    background-color: var(--erepair-base);
+}
+
+.contact-one__input-box .nice-select .option:hover,
+.contact-one__input-box .nice-select .option.focus,
+.contact-one__input-box .nice-select .option.selected.focus {
+    color: var(--erepair-white);
+}
+
+.contact-one__btn-box {
+    position: relative;
+    display: block;
+}
+
+/*--------------------------------------------------------------
+# Contact Two
+--------------------------------------------------------------*/
+.contact-two {
+    position: relative;
+    display: block;
+    padding: 80px 0 90px;
+    z-index: 1;
+}
+
+.contact-two__single {
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 40px 10px 30px;
+    margin-bottom: 30px;
+    min-height: 340px;
+}
+
+.contact-two__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: var(--erepair-white);
+    border: 1px solid var(--erepair-bdr-color);
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.contact-two__icon:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    border-radius: 50%;
+    background-color: var(--erepair-black);
+    transform: scale(0);
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+    z-index: -1;
+}
+
+.contact-two__single:hover .contact-two__icon:before {
+    transform: scaleX(1);
+}
+
+.contact-two__icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 26px;
+    color: #1e1e1e;
+    transition: all 500ms linear;
+    transition-delay: 0.1s;
+    transform: scale(1);
+}
+
+.contact-two__single:hover .contact-two__icon span {
+    transform: scale(0.9);
+    color: var(--erepair-white);
+}
+
+.social-media-links {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-media-links a {
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid #4d4c4c;
+    padding: 5px 10px;
+    margin: 0px 2px 0 2px;
+    border-radius: 4px;
+}
+
+.social-media-links a:hover {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact-two__single p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-two__single h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.contact-two__single h3 a {
+    color: #fff;
+}
+
+.contact-two__single h3 a:hover {
+    color: #fff;
+}
+
+.contact-two__single h3 a i {
+    color: #9dc33b;
+    border: 1px solid #4d4c4c;
+    border-radius: 5px;
+    margin: 5px 10px 0 0;
+    padding: 7px;
+}
+
+/*--------------------------------------------------------------
+# Contact Three
+--------------------------------------------------------------*/
+.contact-three {
+    position: relative;
+    display: block;
+    padding: 0 0 120px;
+    z-index: 1;
+}
+
+.contact-three__inner {
+    position: relative;
+    display: block;
+    background-color: var(--erepair-black);
+    border-radius: 20px;
+    padding: 60px 0 60px;
+}
+
+.contact-three__left {
+    position: relative;
+    display: block;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+
+.google-map__one {
+    position: relative;
+    display: block;
+    border: none;
+    height: 450px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contact-three__right {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.contact-three__form-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -1.44px;
+    color: var(--erepair-white);
+    margin-bottom: 26px;
+}
+
+.contact-three__form {
+    position: relative;
+    display: block;
+}
+
+.contact-three__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contact-three__input-box input[type="text"],
+.contact-three__input-box input[type="email"],
+.contact-three__input-box input[type="number"] {
+    height: 57px;
+    width: 100%;
+    background-color: #232323;
+    border: 1px solid rgba(var(--erepair-white-rgb), .10);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #b4b4b4;
+    display: block;
+    border-radius: 20px;
+}
+
+.contact-three__input-box .select-box {
+    width: 100%;
+}
+
+.contact-three__input-box .nice-select {
+    height: 57px;
+    width: 100%;
+    background-color: #232323;
+    border: 1px solid rgba(var(--erepair-white-rgb), .10);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    color: var(--erepair-gray);
+    display: block;
+    font-weight: 400;
+    border-radius: 20px;
+    line-height: 57px;
+    float: none;
+}
+
+.contact-three__input-box .nice-select:after {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid var(--erepair-gray);
+    border-right: 2px solid var(--erepair-gray);
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.contact-three__input-box .nice-select .option {
+    color: var(--erepair-white);
+}
+
+.contact-three__input-box .nice-select .list {
+    background-color: var(--erepair-base);
+}
+
+.contact-three__input-box .nice-select .option:hover,
+.contact-three__input-box .nice-select .option.focus,
+.contact-three__input-box .nice-select .option.selected.focus {
+    color: var(--erepair-white);
+}
+
+.contact-three__input-box textarea {
+    font-size: 16px;
+    color: var(--erepair-gray);
+    height: 175px;
+    width: 100%;
+    background-color: #232323;
+    border: 1px solid rgba(var(--erepair-white-rgb), .10);
+    padding: 15px 20px 30px;
+    border-radius: 20px;
+    outline: none;
+    font-weight: 400;
+    position: relative;
+    display: block;
+}
+
+.contact-three__input-box.text-message-box {
+    height: 175px;
+}
+
+
+.contact-three__btn-box {
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/
