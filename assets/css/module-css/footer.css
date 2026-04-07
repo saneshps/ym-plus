@@ -155,7 +155,8 @@
 }
 
 .footer-widget__link li+li {
-    margin-top: 12px;
+      margin-top: 3px;
+    font-size: 15px;
 }
 
 .footer-widget__link li a {
@@ -370,11 +371,14 @@
 
 .footer-widget-two__contact li .content p {
     color: #DDDDDD;
+        font-size: 14px;
+    line-height: 25px;
 }
 
 .footer-widget-two__contact li .content p a {
     color: #DDDDDD;
     font-family: sans-serif;
+    font-size: 15px;
 }
 
 .footer-widget-two__contact li .content p a:hover {
