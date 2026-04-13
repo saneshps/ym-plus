@@ -1,0 +1,356 @@
+/* Welding API Product List Styles */
+
+.welding-api-list {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.welding-api-list .row {
+    margin-top: 40px;
+}
+
+/* Product Card */
+.category-head
+{
+    color: #333 !important;
+}
+.welding-api__list_row
+{ 
+}
+.category-list 
+{  
+        box-shadow: 1px 0px 20px 9px #e2e2e2;
+        padding: 0;
+        border-radius: 10px;
+}
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    min-height: auto;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.product-card__image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    flex-shrink: 0;
+}
+
+.product-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-card__image img {
+    transform: scale(1.05);
+}
+
+.product-card__content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.product-card__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    min-height: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-card__rating {
+    margin-bottom: 12px;
+    display: none;
+}
+
+.product-card__rating .rating {
+    font-size: 14px;
+    color: #ff9800;
+    font-weight: 500;
+}
+
+.product-card__description {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    min-height: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.product-card__footer .product-card__link {
+    padding: 4px 13px;
+    font-size: 12px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    border: 1px solid #d1d1d1;
+    border-radius: 7px;
+    justify-content: center;
+}
+
+.product-card__price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #9dc33b;
+    font-family: sans-serif;
+}
+
+/* Dual Price Display */
+.product-card__price-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-card__regular-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    text-decoration: line-through;
+    font-family: sans-serif;
+}
+
+.product-card__sale-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #9dc33b;
+    font-family: sans-serif;
+}
+
+.product-card__link {
+    padding: 8px 15px;
+    font-size: 12px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* Loading State */
+.product-card--loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Error Message */
+.text-danger {
+    color: #d32f2f !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welding-api-list {
+        padding: 40px 0;
+    }
+
+    .product-card__image {
+        height: 200px;
+    }
+
+    .product-card__title {
+        font-size: 15px;
+    }
+
+    .product-card__footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-card__link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .welding-api-list {
+        padding: 30px 0;
+    }
+
+    .product-card__image {
+        height: 180px;
+    }
+
+    .product-card__content {
+        padding: 15px;
+    }
+
+    .product-card__title {
+        font-size: 14px;
+    }
+
+    .product-card__price {
+        font-size: 16px;
+    }
+}
+
+/* ========== PAGINATION STYLES ========== */
+
+.welding-pagination-wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.welding-pagination {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.pagination-btn:hover:not(.disabled):not(.active) {
+    background-color: #f5f5f5;
+    border-color: #999;
+    color: #333;
+}
+
+.pagination-btn.active {
+    background-color: #d32f2f;
+    color: #fff;
+    border-color: #d32f2f;
+    cursor: default;
+}
+
+.pagination-btn.disabled {
+    background-color: #f9f9f9;
+    color: #ccc;
+    border-color: #ddd;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.pagination-btn i {
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+.pagination-prev,
+.pagination-next {
+    gap: 5px;
+}
+
+.pagination-prev i,
+.pagination-next i {
+    margin: 0;
+}
+
+/* Responsive Pagination */
+@media (max-width: 768px) {
+    .pagination-btn {
+        min-width: 35px;
+        height: 35px;
+        padding: 0 8px;
+        font-size: 13px;
+    }
+
+    .welding-pagination {
+        gap: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pagination-btn {
+        min-width: 30px;
+        height: 30px;
+        padding: 0 6px;
+        font-size: 12px;
+    }
+
+    .welding-pagination {
+        gap: 4px;
+    }
+
+    .pagination-btn i {
+        font-size: 10px;
+    }
+
+    .pagination-prev,
+    .pagination-next {
+        display: none;
+    }
+
+    .pagination-page {
+        min-width: 30px;
+        height: 30px;
+    }
+}
+
