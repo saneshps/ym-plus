@@ -86,7 +86,7 @@ function createProductCard(product) {
     const rating = product.average_rating ? `${product.average_rating} / 5` : 'No ratings';
     
     return `
-        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="category-list">
             <div class="product-card">
                 <div class="product-card__image">
