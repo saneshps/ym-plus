@@ -148,9 +148,9 @@
 }
 
 .blog-one__title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
     letter-spacing: -0.72px;
     margin-bottom: 24px;
 }
@@ -602,6 +602,16 @@
     padding: 120px 0 120px;
     z-index: 1;
 }
+.blog-details .blog-details__list
+{
+    padding-left: 25px;
+   margin: 15px 0px;
+}
+.blog-details .blog-details__list li
+{
+list-style-type: square;
+line-height: 32px;
+}
 
 .blog-details__left {
     position: relative;
@@ -645,12 +655,20 @@
     display: block;
     margin-top: 30px;
 }
+.blog-details__content h2,
+.blog-details__content h3,
+.blog-details__content h4,
+.blog-details__content h5
+{
+    margin-bottom: 15px;
+}
 
 .blog-details__user-and-meta {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .blog-details__user {
@@ -1031,6 +1049,7 @@
     line-height: 36px;
     margin-bottom: 30px;
     letter-spacing: -0.72px;
+    color: #fff;
 }
 
 .sidebar__search {
@@ -1182,7 +1201,7 @@
     position: relative;
     display: block;
     padding: 35px 40px 40px;
-    background-color: var(--erepair-extra);
+    background-color: #232323;
     border-radius: 20px;
 }
 
@@ -1210,15 +1229,14 @@
 
 .sidebar__post-image img {
     width: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .sidebar__post-content {
     position: relative;
     display: block;
-    background-color: var(--erepair-white);
-    border: 1px solid var(--erepair-bdr-color);
+    background-color: #232323; 
     border-left: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -1235,13 +1253,13 @@
 }
 
 .sidebar__post-content h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 25px; 
 }
 
 .sidebar__post-content h3 a {
-    color: var(--erepair-black);
+    color: #fff;
 }
 
 .sidebar__post-content h3 a:hover {

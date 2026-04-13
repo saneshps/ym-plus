@@ -9,7 +9,8 @@ const API_CONFIG = {
     categoriesPath: '/wp-json/wc/v3/products/categories',
     consumerKey: 'ck_c6692dd069593bcb20c3a99e1d0fbfa64f2c0250',
     consumerSecret: 'cs_7ae7ed8855d4d065cdfd0e3b40576af3df5fc530',
-    productsPerPage: 12
+    productsPerPage: 12,
+    timeout: 5000 // 5 second timeout
 };
 
 // Pagination state
@@ -25,6 +26,26 @@ let paginationState = {
 function generateAuthHeader() {
     const credentials = API_CONFIG.consumerKey + ':' + API_CONFIG.consumerSecret;
     return 'Basic ' + btoa(credentials);
+}
+
+/**
+ * Fetch with timeout
+ */
+async function fetchWithTimeout(url, options = {}) {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), API_CONFIG.timeout);
+    
+    try {
+        const response = await fetch(url, {
+            ...options,
+            signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+        return response;
+    } catch (error) {
+        clearTimeout(timeoutId);
+        throw error;
+    }
 }
 
 /**
@@ -64,7 +85,7 @@ async function fetchProducts(page = 1, categoryId = null) {
         
         const url = buildApiUrl(API_CONFIG.productsPath, params);
         
-        const response = await fetch(url, {
+        const response = await fetchWithTimeout(url, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -87,8 +108,9 @@ async function fetchProducts(page = 1, categoryId = null) {
         };
     } catch (error) {
         console.error('Error fetching products:', error);
+        // Return empty state instead of null
         return {
-            products: null,
+            products: [],
             totalPages: 1
         };
     }
@@ -101,7 +123,7 @@ async function fetchCategories() {
     try {
         const url = buildApiUrl(API_CONFIG.categoriesPath, { per_page: 100 });
         
-        const response = await fetch(url, {
+        const response = await fetchWithTimeout(url, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -117,7 +139,7 @@ async function fetchCategories() {
         return categories;
     } catch (error) {
         console.error('Error fetching categories:', error);
-        return null;
+        return [];
     }
 }
 
@@ -419,8 +441,14 @@ async function displayProducts(page = 1, categoryId = null) {
 document.addEventListener('DOMContentLoaded', function() {
     // Check if we're on the re-conditional machinery page
     if (document.querySelector('.api-list')) {
-        displayCategoryFilter();
-        displayProducts();
+        // Use Promise.allSettled to prevent one failure from blocking the other
+        Promise.allSettled([
+            displayCategoryFilter(),
+            displayProducts()
+        ]).catch(error => {
+            console.error('Error initializing product API:', error);
+            // Page will still be functional even if API fails
+        });
     }
 });
 

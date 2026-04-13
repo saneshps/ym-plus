@@ -168,7 +168,7 @@
     position: relative;
     display: block;
     border-radius: 20px;
-    background-color: #1e1e1e;
+    background-color: #232323;
     text-align: center;
     padding: 40px 10px 30px;
     margin-bottom: 30px;
@@ -213,7 +213,7 @@
     position: relative;
     display: inline-block;
     font-size: 26px;
-    color: #1e1e1e;
+    color: #232323;
     transition: all 500ms linear;
     transition-delay: 0.1s;
     transform: scale(1);

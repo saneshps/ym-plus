@@ -12,7 +12,7 @@ body.boxed-wrapper .page-wrapper,
 .services-one__icon,
 .testimonial-one__content,
 .brand-one__inner {
-    background-color: #1E1E1E;
+    background-color: #232323;
 }
 
 .main-menu__top-inner,
@@ -22,7 +22,7 @@ body.boxed-wrapper .page-wrapper,
 .testimonial-one,
 .brand-one,
 .blog-one__single {
-    background-color: #1E1E1E;
+    background-color: #232323;
 }
 
 .main-menu__contact-list li:before {
@@ -102,13 +102,13 @@ body.boxed-wrapper .page-wrapper,
 }
 
 .project-one__content {
-    background-color: #1E1E1E;
+    background-color: #232323;
     border-bottom: 1px solid rgba(var(--erepair-extra-rgb), .10);
 }
 
 .pricing-one__single,
 .cta-one__inner {
-    background-color: #1e1e1e;
+    background-color: #232323;
     box-shadow: 1px 13px 19px 0px #373737;
 }
 

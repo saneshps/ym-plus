@@ -17,8 +17,13 @@ class ProductCarousel {
     }
 
     async init() {
-        // Load products from API
-        await this.loadProducts();
+        // Load products from API with timeout protection
+        try {
+            await this.loadProducts();
+        } catch (error) {
+            console.error('Error initializing carousel:', error);
+            this.carousel.innerHTML = `<p style="color:#999;padding:20px;">Unable to load carousel. Please refresh the page.</p>`;
+        }
 
         // Setup event listeners
         this.setupEventListeners();
