@@ -379,7 +379,7 @@ async function displayProducts(page = 1, categoryId = null) {
 
     // Fetch products
     const response = await fetchProducts(page, categoryId);
-    const products = response.products;
+    let products = response.products;
     const totalPages = response.totalPages;
 
     // Update pagination state
@@ -393,6 +393,35 @@ async function displayProducts(page = 1, categoryId = null) {
                 <p>No products found. Please try again later.</p>
             </div>
         `;
+        return;
+    }
+
+    // Strict filter: Only products with BOTH valid image AND valid price
+    products = products.filter(product => {
+        // Check for valid image
+        const hasValidImage = product.images && 
+                             product.images.length > 0 && 
+                             product.images[0].src && 
+                             !product.images[0].src.includes('placeholder');
+        
+        // Check for valid price (must be a number greater than 0)
+        const hasValidPrice = (product.price && parseFloat(product.price) > 0) || 
+                             (product.sale_price && parseFloat(product.sale_price) > 0);
+        
+        // Must have both
+        return hasValidImage && hasValidPrice;
+    });
+
+    if (products.length === 0) {
+        // Still show pagination even if no products on this page, so user can navigate
+        const paginationHtml = createPaginationHtml(page, totalPages);
+        const noProductsMsg = `
+            <div class="col-12" style="text-align:center;padding:40px;font-size:16px;color:#999;">
+                <p>No valid products available on this page. Try another page or category.</p>
+            </div>
+        `;
+        apiListSection.innerHTML = noProductsMsg + paginationHtml;
+        addPaginationListeners();
         return;
     }
 
