@@ -102,14 +102,12 @@
     color: var(--erepair-white);
 }
 
-.project-one__arrow a:hover {
-    background-color: var(--erepair-primary);
+.project-one__arrow a:hover { 
     color: var(--erepair-black);
 }
 
 .project-one__content {
-    padding: 16px 30px 19px;
-    background-color: var(--erepair-white);
+    padding: 16px 30px 19px; 
 }
 
 .project-one__single:hover .project-one__content {
@@ -132,7 +130,7 @@
     line-height: 34px;
     text-transform: capitalize;
     margin-top: 7px;
-    color: #eaeaea;
+    color: #333;
     font-family: sans-serif;
 }
 

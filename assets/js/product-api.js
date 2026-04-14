@@ -265,43 +265,47 @@ function createProductCard(product) {
     const price = product.price ? formatPrice(product.price) : formatPrice(product.sale_price);
     const originalPrice = product.regular_price ? formatPrice(product.regular_price) : '';
     const link = product.permalink || '#';
+    const description = product.short_description || 'Professional machinery with advanced features and reliable performance.';
     
-    let priceHtml = `<span class="product-price" style="color:#9dc33b;font-weight:700;font-size:16px;">${price}</span>`;
+    let priceDisplay = price;
+    let originalPriceDisplay = originalPrice;
     
-    if (originalPrice && product.sale_price && parseFloat(product.regular_price) > parseFloat(product.sale_price)) {
-        priceHtml = `
-            <span style="color:#999;text-decoration:line-through;margin-right:8px;font-family: sans-serif;">  ${originalPrice}</span>
-            <br>
-            <span class="product-price" style="color:#9dc33b;font-weight:700;font-size:16px; font-family: sans-serif;"> ${price}</span>
-        `;
-    }
-
     return `
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 project-box wow fadeInLeft" data-wow-delay="100ms">
-            <div class="project-one__single" style="border:1px solid #484848;border-radius:6px;overflow:hidden;transition:all 0.3s ease;display:flex;flex-direction:column;height:100%;">
-                <a href="${link}" target="_blank" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;height:100%;">
-                    <div class="project-one__img-box" style="flex-shrink:0;">
-                        <div class="project-one__img" style="height:220px;overflow:hidden;background:#f9f9f9;display:flex;align-items:center;justify-content:center;border-radius: 0;">
-                            <img src="${image}" alt="${title}" style="width:100%;height:100%;object-fit:contain;padding:10px;">
-                            <div class="project-one__arrow"></div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 product-card-wrapper" data-wow-delay="100ms">
+            <div class="product-card" style="border-radius:8px;overflow:hidden;transition:all 0.3s ease;display:flex;flex-direction:column;height:100%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                <!-- Image Section -->
+                <div class="product-card__img-section" style="background:#fff;padding:0px;text-align:center;flex-shrink:0;min-height:240px;display:flex;align-items:center;justify-content:center;">
+                    <a href="${link}" target="_blank" style="text-decoration:none;display:inline-block;max-width:100%;">
+                        <img src="${image}" alt="${title}" style="">
+                    </a>
+                </div>
+                
+                <!-- Content Section -->
+                <div class="product-card__content" style="padding:16px;flex-grow:1;display:flex;flex-direction:column;justify-content:space-between;">
+                    <!-- Title -->
+                    <a href="${link}" target="_blank" style="text-decoration:none;color:inherit;">
+                        <h3 class="product-card__title">${title}</h3>
+                    </a>
+                    
+                    <!-- Short Description - very small -->
+                    <!-- <p class="product-card__description" >${description.substring(0, 50)}...</p> -->
+
+                    <!-- Price & Button Section in One Row -->
+                    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:10px;"
+                        <!-- Price Section -->
+                        <div class="product-card__price">
+                            ${originalPrice && originalPrice !== price ? 
+                                `<p class="product-card__original-price">${originalPriceDisplay}</p>` 
+                                : ''}
+                            <p class="product-card__current-price">${priceDisplay}</p>
                         </div>
+                        
+                        <!-- Button Section -->
+                        <a href="${link}" target="_blank" class="product-card__link thm-btn">
+                            VIEW DETAILS
+                        </a>
                     </div>
-                    <div class="project-one__content" style="padding:12px;flex-grow:1;display:flex;flex-direction:column;justify-content:space-between;">
-                        <h3 class="project-one__title" style="margin:0;font-size:14px;font-weight:600;line-height:1.4;">${title}</h3>
-                        <div style="margin-top:8px;font-size:13px;margin-bottom: 50px;">
-                            ${priceHtml}
-                        </div>
-                        <button class="thm-btn" style="margin-top: 10px;
-    font-size: 12px;
-    position: absolute;
-    bottom: 12px;
-    left: 13px;
-    right: 0px;
-    width: fit-content;
-    padding: 3px 20px;
-    border-radius: 30px;"> Buy Now  </button>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     `;
@@ -322,8 +326,8 @@ async function displayCategoryFilter(containerId = '.api-list .container') {
         // Create filter section
         const filterHtml = `
             <div class="category-filter" style="margin-bottom:30px;text-align:right;">
-                <label style="font-weight:600;margin-right:12px;font-size:14px;">Filter by Category:</label>
-                <select id="categorySelect" style="padding:8px 12px;border:1px solid #ddd;border-radius:4px;font-size:14px;cursor:pointer;">
+                <label style="font-weight:600;margin-right:12px;font-size:12px; color:#333;">Filter by Category:</label>
+                <select id="categorySelect" style="padding:8px 12px;border:1px solid #ddd;border-radius:4px;font-size:13px;cursor:pointer;">
                     <option value="">All Products</option>
                     ${categories.map(cat => `<option value="${cat.id}">${cat.name}</option>`).join('')}
                 </select>
