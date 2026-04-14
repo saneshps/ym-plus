@@ -7,6 +7,10 @@
     padding: 0 0 90px;
     z-index: 1;
 }
+.blog-one .blog-area
+{
+    padding-top: 30px;
+}
 
 .blog-one__top {
     position: relative;

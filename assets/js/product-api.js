@@ -302,7 +302,7 @@ function createProductCard(product) {
                         
                         <!-- Button Section -->
                         <a href="${link}" target="_blank" class="product-card__link thm-btn">
-                            VIEW DETAILS
+                           Buy Now
                         </a>
                     </div>
                 </div>

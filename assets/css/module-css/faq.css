@@ -204,6 +204,25 @@
 }
 
 
+.service-details__faq 
+{
+
+}
+
+.service-details__faq .service-details__faq-title
+{
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.service-details__faq .faq-one__right
+{
+ background: none;
+ padding: 0;
+ margin-top: 30px;
+}
+
+
 
 
 

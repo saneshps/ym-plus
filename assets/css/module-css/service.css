@@ -3,9 +3,9 @@
 --------------------------------------------------------------*/
 .services-one {
     position: relative;
-    display: block;
-    padding: 120px 0 120px;
+    display: block; 
     z-index: 1;
+    margin-top: 40px;
 }
 
 .services-one__inner {
@@ -33,6 +33,10 @@
 }
 
 .services-one__service-list li:nth-child(2) .services-one__single {
+    padding-left: 50px;
+}
+
+.services-one__service-list li:nth-child(3) .services-one__single {
     padding-left: 50px;
 }
 
@@ -900,11 +904,7 @@
     padding: 120px 0 90px;
 }
 
-
-
-
-
-
+ 
 
 
 /*--------------------------------------------------------------

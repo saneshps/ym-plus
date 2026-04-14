@@ -7,6 +7,11 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1319px) {
 
+    .process-one .end-to-end
+ { 
+    padding: 70px 100px 10px 100px; 
+}
+
     .project-one__single {
         margin: 0 10px 50px 10px;
     }
@@ -99,6 +104,12 @@
 
 /* Medium screen  */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+        .process-one .end-to-end
+ { 
+    padding: 70px 20px 10px 20px; 
+}
 
     .project-box {
     margin-bottom: 50px;
@@ -423,6 +434,12 @@
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+    
+        .process-one .end-to-end
+ { 
+    padding: 70px 20px 10px 20px; 
+}
+
         .project-box {
     margin-bottom: 50px;
     padding: 0px 20px;
@@ -463,10 +480,14 @@
         padding-left: 0px;
     }
 
-    .services-one__single::before {
-        display: none;
-    }
+.services-one__single::before {
+        width: 100%;
+        height: 1px;
+}
 
+.services-one__service-list li:nth-child(3) .services-one__single {
+    padding-left: 0px;
+}
 
 
 
@@ -806,6 +827,21 @@
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+
+
+    .process-one .end-to-end {
+    padding: 30px 20px 10px 20px;
+}
+
+    .services-one__single::before {
+        width: 100%;
+        height: 1px;
+}
+
+.services-one__service-list li:nth-child(3) .services-one__single {
+    padding-left: 0px;
+}
+
         .project-box {
     margin-bottom: 40px;
     padding: 0px 15px;
@@ -864,6 +900,7 @@
     .services-one__service-list li {
         width: 100%;
         float: left;
+        border-bottom: 1px solid #454545;
     }
 
     .services-one__service-list li:nth-child(2) .services-one__single {
@@ -2015,6 +2052,7 @@
 
 
 @media only screen and (max-width: 767px) {
+ 
 
     .project-one__single {
         margin: 0 0px 50px 0px;
@@ -2162,6 +2200,43 @@
 }
 
 @media only screen and (max-width: 576px) {
+
+    .process-one .end-to-end {
+    padding: 30px 20px 10px 20px;
+}
+
+        .services-one__single::before {
+        width: 100%;
+        height: 1px;
+}
+
+.services-one__service-list li:nth-child(3) .services-one__single {
+    padding-left: 0px;
+}
+
+    .services-one__single::before {
+        width: 100%;
+        height: 1px;
+}
+
+.services-one__service-list li:nth-child(3) .services-one__single {
+    padding-left: 0px;
+}
+
+
+    .faq-one__right .faq-one-accrodion .accrodion-title h4 {
+ 
+    font-size: 15px; 
+    padding: 0 20px 0 0;
+}
+
+    .faq-one__right .faq-one-accrodion .accrodion-title { 
+    padding: 16px 15px 16px; 
+}
+
+    .api-list { 
+    padding: 20px 0 0 0;
+}
 
     .blog-details { 
     padding: 30px 0 50px; 

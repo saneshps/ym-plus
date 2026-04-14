@@ -1,0 +1,377 @@
+/* Application Industries Carousel Styles */
+
+.application-industries {
+    padding: 60px 0; 
+}
+
+/* Carousel Wrapper */
+.app-industries-carousel-wrapper {
+    position: relative;
+    margin-top: 50px;
+}
+
+/* Main Carousel Container */
+.app-industries-carousel {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* Individual Carousel Item */
+.app-industries-carousel-item {
+    flex: 1;
+    min-width: 200px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Item - Expanded State */
+.app-industries-carousel-item.active {
+    flex: 2.5;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Inactive Items - Collapsed State */
+.app-industries-carousel-item:not(.active) {
+    flex: 0.7;
+    opacity: 0.6;
+}
+
+/* Image Container */
+.app-industries-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.app-industries-carousel-item.active img {
+    transform: scale(1.05);
+}
+
+.app-industries-carousel-item:not(.active) img {
+    transform: scale(1);
+}
+
+/* Hover Effect for Inactive Items */
+.app-industries-carousel-item:not(.active):hover {
+    opacity: 0.8;
+}
+
+/* Content Overlay for Active Item */
+.app-industries-carousel-item.active .carousel-item-content {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.app-industries-carousel-item:not(.active) .carousel-item-content {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.carousel-item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 30px 20px 20px;
+    color: white;
+    transition: opacity 0.4s ease;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.carousel-item-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.carousel-item-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Carousel Navigation Buttons */
+.app-industries-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(157, 195, 59, 0.9);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.app-industries-nav-button:hover {
+    background: rgba(157, 195, 59, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(157, 195, 59, 0.4);
+}
+
+.app-industries-nav-button:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.app-industries-nav-prev {
+    left: -70px;
+}
+
+.app-industries-nav-next {
+    right: -70px;
+}
+
+/* Dots Navigation */
+.app-industries-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.app-industries-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.app-industries-dot.active {
+    background: #9dc33b;
+    width: 30px;
+    border-radius: 6px;
+}
+
+.app-industries-dot:hover {
+    background: #b8d966;
+}
+
+/* Responsive Design */
+
+/* Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    .application-industries {
+        padding: 50px 0;
+    }
+
+    .app-industries-carousel-wrapper {
+        margin-top: 40px;
+    }
+
+    .app-industries-carousel {
+        gap: 16px;
+    }
+
+    .app-industries-carousel-item {
+        height: 250px;
+    }
+
+    .app-industries-nav-prev {
+        left: -40px;
+    }
+
+    .app-industries-nav-next {
+        right: -40px;
+    }
+
+    .app-industries-nav-button {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .carousel-item-content {
+        padding: 25px 15px 15px;
+    }
+
+    .carousel-item-title {
+        font-size: 16px;
+    }
+
+    .carousel-item-description {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .application-industries {
+        padding: 40px 0;
+    }
+
+    .app-industries-carousel-wrapper {
+        margin-top: 30px;
+    }
+
+    .app-industries-carousel {
+        gap: 12px;
+        margin: 0 50px;
+    }
+
+    .app-industries-carousel-item {
+        height: 220px;
+    }
+
+    .app-industries-carousel-item.active {
+        flex: 2;
+    }
+
+    .app-industries-carousel-item:not(.active) {
+        flex: 0.8;
+    }
+
+    .app-industries-nav-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .app-industries-nav-prev {
+        left: -10px;
+    }
+
+    .app-industries-nav-next {
+        right: -10px;
+    }
+
+    .carousel-item-content {
+        padding: 20px 12px 12px;
+        min-height: 100px;
+    }
+
+    .carousel-item-title {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .carousel-item-description {
+        font-size: 12px;
+        display: none;
+    }
+
+    .app-industries-dots {
+        margin-top: 25px;
+        gap: 6px;
+    }
+
+    .app-industries-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .app-industries-dot.active {
+        width: 25px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 576px) {
+    .application-industries {
+        padding: 30px 0;
+    }
+
+    .app-industries-carousel {
+        gap: 10px;
+        margin: 0 40px;
+    }
+
+    .app-industries-carousel-item {
+        height: 200px;
+    }
+
+    .app-industries-carousel-item.active {
+        flex: 1.8;
+    }
+
+    .app-industries-carousel-item:not(.active) {
+        flex: 0.6;
+    }
+
+    .app-industries-nav-button {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .app-industries-nav-prev {
+        left: -46px;
+    }
+
+    .app-industries-nav-next {
+        right: -46px;
+    }
+
+    .carousel-item-content {
+        padding: 15px 10px 10px;
+        min-height: 80px;
+    }
+
+    .carousel-item-title {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .section-title-three__title {
+        font-size: 28px;
+    }
+
+    .app-industries-dots {
+        margin-top: 20px;
+    }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+    .app-industries-carousel {
+        margin: 0 35px;
+    }
+
+    .app-industries-carousel-item {
+        height: 180px;
+    }
+
+    .app-industries-nav-prev {
+        left: -10px;
+    }
+
+    .app-industries-nav-next {
+        right: -10px;
+    }
+
+    .carousel-item-title {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,348 @@
+/*--------------------------------------------------------------
+# Terms & Conditions Page
+--------------------------------------------------------------*/
+
+.terms-and-conditions-page {
+    position: relative;
+    display: block;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    z-index: 1;
+}
+
+.terms-and-conditions-page__inner {
+    position: relative;
+    display: block;
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 60px 60px;
+    border: 1px solid rgba(157, 195, 59, 0.15);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+    transition: all 500ms ease;
+}
+
+.terms-and-conditions-page__inner:hover {
+    border-color: rgba(157, 195, 59, 0.3);
+    box-shadow: 0px 15px 50px rgba(157, 195, 59, 0.1);
+}
+
+/* Main Heading */
+.terms-and-conditions-page__inner > h3 {
+    position: relative;
+    display: inline-block;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--erepair-white);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.terms-and-conditions-page__inner > h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--erepair-base) 0%, rgba(157, 195, 59, 0.5) 100%);
+    border-radius: 2px;
+    transition: all 500ms ease;
+}
+
+.terms-and-conditions-page__inner:hover > h3::after {
+    width: 120px;
+}
+
+/* Intro Paragraph */
+.terms-and-conditions-page__inner > p:first-of-type {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 45px;
+    font-weight: 400;
+}
+
+/* Section Headings (h4) */
+.terms-and-conditions-page__inner h4 { 
+    border-radius: 8px;
+    padding: 0 0 5px 0;
+}
+
+.terms-and-conditions-page__inner h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    background: var(--erepair-base);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease;
+}
+
+.terms-and-conditions-page__inner h4:hover {
+ 
+}
+
+.terms-and-conditions-page__inner h4:hover::before {
+    width: 8px;
+    height: 8px;
+    left: -3px;
+}
+
+/* Paragraphs under sections */
+.terms-and-conditions-page__inner h4 + p {
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+    font-weight: 400;
+    padding-left: 0;
+    transition: all 300ms ease;
+}
+
+.terms-and-conditions-page__inner h4:hover + p {
+    color: rgba(255, 255, 255, 0.85);
+    padding-left: 10px;
+}
+
+/* Additional styling for multiple paragraphs */
+.terms-and-conditions-page__inner p {
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Links styling */
+.terms-and-conditions-page__inner a {
+    color: var(--erepair-base);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease;
+}
+
+.terms-and-conditions-page__inner a:hover {
+    color: rgba(157, 195, 59, 0.8);
+    border-bottom-color: var(--erepair-base);
+}
+
+/* Numbered sections with enhanced styling */
+
+
+/* Divider between sections */
+.terms-and-conditions-page__inner h4 + p + h4 {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1199px) {
+    .terms-and-conditions-page {
+        padding: 60px 0;
+    }
+
+    .terms-and-conditions-page__inner {
+        padding: 50px 45px;
+    }
+
+    .terms-and-conditions-page__inner > h3 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .terms-and-conditions-page__inner h4 {
+        font-size: 20px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .terms-and-conditions-page {
+        padding: 40px 0;
+    }
+
+    .terms-and-conditions-page__inner {
+        padding: 35px 25px;
+        border-radius: 15px;
+    }
+
+    .terms-and-conditions-page__inner > h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .terms-and-conditions-page__inner > h3::after {
+        width: 60px;
+    }
+
+    .terms-and-conditions-page__inner:hover > h3::after {
+        width: 100px;
+    }
+
+    .terms-and-conditions-page__inner > p:first-of-type {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .terms-and-conditions-page__inner h4 {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 12px;
+        padding: 12px 15px;
+        padding-left: 40px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .terms-and-conditions-page__inner h4::before {
+        width: 4px;
+        height: 4px;
+    }
+
+    .terms-and-conditions-page__inner h4:hover {
+        padding-left: 50px;
+    }
+
+    .terms-and-conditions-page__inner h4:hover::before {
+        width: 6px;
+        height: 6px;
+        left: -2px;
+    }
+
+    .terms-and-conditions-page__inner h4 + p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .terms-and-conditions-page__inner p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .terms-and-conditions-page {
+        padding: 30px 0;
+    }
+
+    .terms-and-conditions-page__inner {
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .terms-and-conditions-page__inner > h3 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .terms-and-conditions-page__inner > h3::after {
+        width: 50px;
+        height: 3px;
+    }
+
+    .terms-and-conditions-page__inner:hover > h3::after {
+        width: 80px;
+    }
+
+    .terms-and-conditions-page__inner > p:first-of-type {
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+
+    .terms-and-conditions-page__inner h4 {
+             font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        padding: 10px 12px;
+        padding-left: 15px;
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .terms-and-conditions-page__inner h4::before {
+        width: 3px;
+        height: 3px;
+    }
+
+    .terms-and-conditions-page__inner h4:hover {
+        padding-left: 45px;
+    }
+
+    .terms-and-conditions-page__inner h4 + p,
+    .terms-and-conditions-page__inner p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+/* Animation on scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.terms-and-conditions-page__inner {
+    animation: fadeInUp 600ms ease-out;
+}
+
+/* Dark mode enhancements */
+@media (prefers-color-scheme: dark) {
+    .terms-and-conditions-page {
+        background: linear-gradient(135deg, #0a0a0a 0%, #151515 100%);
+    }
+
+    .terms-and-conditions-page__inner {
+        background: #121212;
+        border-color: rgba(157, 195, 59, 0.12);
+    }
+
+    .terms-and-conditions-page__inner:hover {
+        border-color: rgba(157, 195, 59, 0.25);
+        box-shadow: 0px 15px 50px rgba(157, 195, 59, 0.08);
+    }
+}
+
+/* Print styles */
+@media print {
+    .terms-and-conditions-page {
+        background: white;
+        padding: 20px 0;
+    }
+
+    .terms-and-conditions-page__inner {
+        background: white;
+        border: 1px solid #ddd;
+        box-shadow: none;
+        padding: 40px 40px;
+    }
+
+    .terms-and-conditions-page__inner > h3,
+    .terms-and-conditions-page__inner h4 {
+        color: #000;
+    }
+
+    .terms-and-conditions-page__inner > h3::after,
+    .terms-and-conditions-page__inner h4::before {
+        background: #333;
+    }
+
+    .terms-and-conditions-page__inner > p:first-of-type,
+    .terms-and-conditions-page__inner h4 + p,
+    .terms-and-conditions-page__inner p {
+        color: #333;
+    }
+}

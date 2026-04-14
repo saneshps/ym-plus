@@ -100,7 +100,7 @@ function createProductCard(product) {
                     <p class="product-card__description">${truncateText(product.description, 100)}</p>
                     <div class="product-card__footer">
                         ${priceHTML}
-                        <a href="${product.permalink}" target="_blank" class="product-card__link thm-btn">View Details</a>
+                        <a href="${product.permalink}" target="_blank" class="product-card__link thm-btn"> Buy Now  </a>
                     </div>
                 </div>
             </div>
