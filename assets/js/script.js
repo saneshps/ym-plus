@@ -292,6 +292,53 @@
     });
   }
 
+  //Services Home Carousel
+  if ($(".services-carousel").length) {
+    $(".services-carousel").owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      dots: true,
+      smartSpeed: 500,
+      autoplay: true,
+      autoplayTimeout: 6000,
+      navText: [
+        '<i class="fa fa-chevron-left"></i>',
+        '<i class="fa fa-chevron-right"></i>',
+      ],
+      responsive: {
+        0: {
+          items: 1,
+          margin: 15,
+        },
+        480: {
+          items: 1,
+          margin: 15,
+        },
+        600: {
+          items: 2,
+          margin: 20,
+        },
+        768: {
+          items: 2,
+          margin: 25,
+        },
+        992: {
+          items: 3,
+          margin: 30,
+        },
+        1200: {
+          items: 3,
+          margin: 30,
+        },
+        1320: {
+          items: 3,
+          margin: 30,
+        },
+      },
+    });
+  }
+
   //Progress Count Bar
   if ($(".count-bar").length) {
     $(".count-bar").appear(

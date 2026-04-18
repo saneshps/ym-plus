@@ -946,9 +946,13 @@
     }
 
     .services-two__single {
-        margin-left: 20px;
+              margin-left: 0px;
         padding: 34px 20px 26px;
-        padding-left: 85px;
+        padding-left: 20px;
+    }
+    .services-two__icon
+    {
+        display: none;
     }
 
     .services-two__title {
@@ -1219,7 +1223,7 @@
 
     .about-three__right {
         margin-left: 0;
-        margin-top: 60px;
+        margin-top: 10px;
     }
 
     .section-title-three__title {
@@ -1548,7 +1552,7 @@
     }
 
     .page-header__inner {
-        padding: 110px 0 70px;
+        padding: 60px 0 70px;
     }
 
     .project-one {
@@ -1736,6 +1740,10 @@
     .testimonial-two__carousel.owl-theme .owl-nav {
         display: none;
     }
+
+     .main-menu-two__left { 
+   gap: 50px;
+ }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1319px) {}
@@ -1860,6 +1868,19 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
+    .main-menu-two__top-inner .main-menu-two__top-left .main-menu-two__text
+    {
+        display: none;
+    }
+
+        .main-slider__title {
+            font-size: 40px;
+        line-height: 50px;
+    }
+.main-slider__title:before { 
+    left: 120px; 
+}
+
     .project-one__single {
         margin: 0 0px 50px 0px;
     }
@@ -1948,6 +1969,16 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+       .main-menu-two__top-inner .main-menu-two__top-left .main-menu-two__text
+    {
+        display: none;
+    }
+
+
+    .main-slider__title:before { 
+    left: 220px; 
+}
+
     .project-one__single {
         margin: 0 0px 50px 0px;
     }
@@ -1970,8 +2001,8 @@
     }
 
     .main-slider__title {
-        font-size: 80px;
-        line-height: 100px;
+            font-size: 50px;
+        line-height: 60px;
     }
 
     .main-slider__img {
@@ -2090,8 +2121,8 @@
     }
 
     .main-slider__title {
-        font-size: 35px;
-        line-height: 50px;
+        font-size: 25px;
+        line-height: 33px;
     }
 
     .main-slider__title:before {
@@ -2201,6 +2232,11 @@
 
 @media only screen and (max-width: 576px) {
 
+    .main-slider__text { 
+    font-size: 15px;
+    line-height: 23px; 
+}
+
     .process-one .end-to-end {
     padding: 30px 20px 10px 20px;
 }
@@ -2262,6 +2298,11 @@
 
 
 @media only screen and (min-width: 1320px) and (max-width: 1550px) {
+
+    .services-two__single { 
+    height: 530px;
+        margin-bottom: 60px;
+}
     .main-slider__img {
         right: 110px;
     }
@@ -2306,6 +2347,12 @@
 # Main Menu All Responsice Css
 --------------------------------------------------------------*/
 @media only screen and (min-width: 1200px) and (max-width: 1319px) {
+
+    .services-two__single { 
+        height: auto;
+        width: 100%;
+    }
+
     .main-menu__top-inner {
         padding: 5px 30px;
     }
@@ -2342,6 +2389,23 @@
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .main-menu-two__call-and-btn-box { 
+    padding: 10px 0;
+}
+            .main-menu-two__logo img {
+    width: 70px;
+}
+
+        .services-two { 
+    padding: 40px 30px 0 30px; 
+}
+
+        .services-two__single { 
+        height: auto;
+        width: 100%;
+            margin-bottom: 40px;
+    }
 
     .blog-details { 
     padding: 20px 0 60px; 
@@ -2399,6 +2463,23 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+    .main-menu-two__call-and-btn-box { 
+    padding: 10px 0;
+}
+        .main-menu-two__logo img {
+    width: 75px;
+}
+
+    .services-two { 
+    padding: 40px 30px 0 30px; 
+}
+
+        .services-two__single { 
+        height: auto;
+        width: 100%;
+            margin-bottom: 40px;
+    }
+
     .blog-details { 
     padding: 10px 0 80px; 
 }
@@ -2410,12 +2491,15 @@
         padding: 0 30px;
     }
 
-
+.main-menu-two__social a
+{
+    width: 30px;
+    height: 30px;
+}
 
 
     .main-menu-two__top-inner {
-        padding: 10px 0 5px;
-        flex-direction: column;
+        padding: 10px 0 5px; 
     }
 
     .main-menu-two__top-right {
@@ -2463,6 +2547,39 @@
 
 
 @media (max-width: 767px) {
+
+    .main-menu { 
+    padding:  0;
+}
+
+    .faq-page { 
+    padding: 30px 0 90px;
+}
+
+    .blog-page {
+    padding: 30px 0 90px;
+}
+
+    .about-four {
+    padding: 40px 0 20px 0;
+}
+
+        .main-slider__text { 
+    font-size: 15px;
+    line-height: 23px; 
+    width: auto;
+}
+
+    .main-menu-two__logo img {
+    width: 50px;
+}
+
+        .services-two__single { 
+        height: auto;
+        width: 100%;
+            margin-bottom: 20px;
+    }
+
     .main-menu__top {
         display: none;
     }
@@ -2543,6 +2660,11 @@
 
 
 @media only screen and (min-width: 1320px) and (max-width: 1480px) {
+
+    .main-menu-two__logo img {
+    width: 90px;
+}
+
     .main-menu__top-inner {
         padding: 5px 60px;
     }
