@@ -5,6 +5,12 @@
     position: relative;
     display: block;
     z-index: 1;
+    padding: 30px 0 30px 0; 
+    margin: 30px 0 0 0;
+}
+
+.contact-and-counter.amc-form {
+    background: #232323 !important;
 }
 
 .contact-and-counter__inner {
@@ -22,6 +28,9 @@
     padding-bottom: 120px;
     z-index: 2;
     margin: 70px 0 0 0;
+}
+.amc-form .contact-one { 
+    padding-bottom: 50px; 
 }
 
 .contact-one__left {
@@ -116,7 +125,7 @@
     padding-right: 20px;
     outline: none;
     font-size: 16px;
-    color: #b4b4b4;
+    color: #9dc33b;
     display: block;
     font-weight: 400;
     border-radius: 20px;
