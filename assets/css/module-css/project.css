@@ -4,8 +4,9 @@
 .project-one {
     position: relative;
     display: block;
-    padding: 10px 0 90px;
+    padding: 80px 0 80px 0px;
     z-index: 1;
+    background: #404040;
 }
 
 .project-one__top {
