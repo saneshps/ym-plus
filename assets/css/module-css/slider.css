@@ -153,10 +153,10 @@
 .main-slider__title {
     position: relative;
     display: block;
-    font-size: 60px;
+    font-size: 45px;
     color: var(--erepair-white);
     font-weight: 600;
-    line-height: 68px;
+    line-height: 55px;
     letter-spacing: -1.8px;
     margin-top: 12px;
     margin-bottom: 31px;
@@ -174,10 +174,10 @@
 .main-slider__title:before {
     content: "";
     position: absolute;
-    left: 310px;
+    left: 175px;
     bottom: 3px;
     height: 3px;
-    width: 235px;
+    width: 225px;
     background-color: var(--erepair-base);
 }
 
@@ -190,7 +190,7 @@
     opacity: 0;
     transition: transform 1200ms ease, opacity 1200ms ease;
     transform: translateX(-200px);
-        width: 1000px;
+        width: 800px;
 }
 
 .active .main-slider__text {

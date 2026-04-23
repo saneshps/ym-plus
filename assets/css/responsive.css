@@ -7,6 +7,8 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1319px) {
 
+
+
     .process-one .end-to-end
  { 
     padding: 70px 100px 10px 100px; 
@@ -1683,60 +1685,28 @@
         margin-top: 17px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 @media only screen and (min-width: 1320px) and (max-width: 1600px) {
+
+    .main-slider__text
+    {
+        width: 600px;
+    }
+
+        .main-slider__title { 
+    font-size: 40px; 
+    line-height: 50px; 
+} 
+
+.main-slider__title:before { 
+    left: 155px; 
+    width: 200px; 
+}
+
     .testimonial-two__carousel.owl-theme .owl-nav {
         display: none;
     }
