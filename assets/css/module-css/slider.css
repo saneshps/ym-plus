@@ -171,7 +171,7 @@
     transition-delay: 800ms;
 }
 
-.main-slider__title:before {
+/* .main-slider__title:before {
     content: "";
     position: absolute;
     left: 175px;
@@ -179,7 +179,7 @@
     height: 3px;
     width: 225px;
     background-color: var(--erepair-base);
-}
+} */
 
 .main-slider__text {
     position: relative;
@@ -190,7 +190,7 @@
     opacity: 0;
     transition: transform 1200ms ease, opacity 1200ms ease;
     transform: translateX(-200px);
-        width: 800px;
+    width: 800px;
 }
 
 .active .main-slider__text {
