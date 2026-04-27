@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 .services-one {
     position: relative;
-    display: block; 
+    display: block;
     z-index: 1;
     margin-top: 40px;
 }
@@ -167,7 +167,7 @@
     border-radius: 20px;
     padding: 34px 30px 26px 100px;
     margin-bottom: 70px;
-    width: 90%; 
+    width: 90%;
     height: 390px;
 }
 
@@ -637,6 +637,11 @@
     z-index: 1;
 }
 
+.service-details h4 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
 .service-details__left {
     position: relative;
     display: block;
@@ -654,12 +659,11 @@
 }
 
 .service-details__title-1 {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 600;
     line-height: 58px;
-    letter-spacing: -1.44px;
-    margin-top: 41px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
     color: #fff;
 }
 
@@ -676,13 +680,14 @@
 }
 
 .service-details__text-2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 7px;
+    margin-bottom: 18px;
 }
 
 .service-details__points-list {
     position: relative;
     display: block;
+    margin-bottom: 20px;
 }
 
 .service-details__points-list li {
@@ -690,6 +695,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    line-height: 18px;
 }
 
 .service-details__points-list li+li {
@@ -790,9 +796,9 @@
 .service-details__img-box-content-title {
     font-size: 24px;
     line-height: 36px;
-    letter-spacing: -0.72px;
     font-weight: 700;
     color: #fff;
+    margin-bottom: 12px;
 }
 
 .service-details__img-box-content-text {
@@ -912,7 +918,7 @@
     padding: 120px 0 90px;
 }
 
- 
+
 
 
 /*--------------------------------------------------------------

@@ -177,6 +177,18 @@
     margin-right: -20px;
 }
 
+.about-one__right h5 {
+    padding: 10px 0;
+}
+
+.about-one__right ul {
+    padding: 5px 0;
+}
+
+.about-one__right ul li {
+    line-height: 30px;
+}
+
 .about-one__right .section-title {
     margin-bottom: 29px;
 }

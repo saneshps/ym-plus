@@ -4,10 +4,15 @@
 .video-one {
     position: relative;
     display: block;
-    padding: 120px 0 270px;
+    padding: 120px 0 100px;
     z-index: 1;
     background: #232323;
     margin: 0 0 100px 0;
+}
+
+.video-one .service-details__points-list li {
+    line-height: 26px;
+    align-items: flex-start;
 }
 
 .video-one__sahpe-1 {
@@ -48,6 +53,10 @@
 .video-one__text-2 {
     margin-top: 29px;
     margin-bottom: 40px;
+}
+
+.video-one__text-1 {
+    margin-bottom: 30px;
 }
 
 .video-one__btn-box {
