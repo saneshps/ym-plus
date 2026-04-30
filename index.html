@@ -1394,16 +1394,16 @@
 
                                 <!-- Step 1 -->
                                 <div id="form-step-1">
-                                    <div class="row align-items-center expert-intro-box">
-                                        <div class="col-md-5 text-center mb-4 mb-md-0">
+                                    <div class="row align-items-center expert-intro-box" id="expert-intro-box-wrap">
+                                        <div class="col-md-5 text-center mb-4 mb-md-0" id="expert-img-col">
                                             <div class="expert-img-wrapper">
                                                 <img src="assets/images/resources/expert_illustration.png"
                                                     alt="Technical Expert" class="img-fluid"
                                                     style="max-height: 250px; animation: floatExpert 3.5s ease-in-out infinite;">
                                             </div>
                                         </div>
-                                        <div class="col-md-7">
-                                            <div class="text-center text-md-start">
+                                        <div class="col-md-7" id="expert-form-col">
+                                            <div class="text-center text-md-start expert-text-wrapper">
                                                 <h4 class="expert-title-text">How can we help you?</h4>
                                                 <p class="expert-subtitle-text">Select a service below to get started
                                                     with our expert assistance.</p>
@@ -1482,7 +1482,8 @@
                                             </div>
                                         </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12">
-                                            <div class="contact-one__btn-box d-flex justify-content-center">
+                                            <div class="contact-one__btn-box d-flex justify-content-center gap-3">
+                                                <button type="button" class="thm-btn contact-one__btn" style="background-color: #6c757d;" id="back-to-service-btn">Back</button>
                                                 <button type="button" class="thm-btn contact-one__btn next-btn"
                                                     id="next-step-btn">Next</button>
                                             </div>
@@ -1575,6 +1576,7 @@
                                         let selectedVal = $(this).val();
                                         if (selectedVal !== '') {
                                             $('#step-1-fields').fadeIn();
+                                            $('#expert-intro-box-wrap').slideUp();
                                             if (selectedVal === 'Machine Repairing') {
                                                 $('#expert_message').attr('placeholder', 'Describe the problem');
                                             } else {
@@ -1582,6 +1584,7 @@
                                             }
                                         } else {
                                             $('#step-1-fields').hide();
+                                            $('#expert-intro-box-wrap').slideDown();
                                         }
                                     });
 
@@ -1637,6 +1640,26 @@
                                         }
                                     });
 
+                                    document.getElementById('back-to-service-btn').addEventListener('click', function () {
+                                        $('#step-1-fields').hide();
+                                        $('#expert-intro-box-wrap').slideDown();
+                                        
+                                        // Reset the select dropdown to allow re-selection
+                                        let serviceSelect = document.getElementById('expert_service_type');
+                                        serviceSelect.value = '';
+                                        
+                                        // Update nice-select if present
+                                        let niceSelect = serviceSelect.nextElementSibling;
+                                        if (niceSelect && niceSelect.classList.contains('nice-select')) {
+                                            $(serviceSelect).niceSelect('update');
+                                        }
+                                        
+                                        // Update selectmenu if present
+                                        if ($.fn.selectmenu) {
+                                            try { $(serviceSelect).selectmenu('refresh'); } catch (e) { }
+                                        }
+                                    });
+
                                     document.getElementById('prev-step-btn').addEventListener('click', function () {
                                         document.getElementById('form-step-2').style.display = 'none';
                                         document.getElementById('form-step-1').style.display = 'block';
@@ -1669,6 +1692,7 @@
                                         document.getElementById('form-step-2').style.display = 'none';
                                         document.getElementById('form-step-3').style.display = 'none';
                                         document.getElementById('step-1-fields').style.display = 'none';
+                                        $('#expert-intro-box-wrap').show();
                                         document.getElementById('bookExpertForm').reset();
 
                                         // Reset borders

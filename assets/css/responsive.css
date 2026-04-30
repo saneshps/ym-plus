@@ -2288,8 +2288,7 @@
 
 @media only screen and (min-width: 1320px) and (max-width: 1550px) {
 
-    .services-two__single {
-        height: 530px;
+    .services-two__single { 
         margin-bottom: 60px;
     }
 
