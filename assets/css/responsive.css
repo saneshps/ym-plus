@@ -439,7 +439,7 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     #bookExpertModal .contact-one__right .contact-one__input-box .select-box {
-        width: 80%;
+        width: 100%;
     }
 
     .video-one {
@@ -800,27 +800,50 @@
         padding-right: 15px;
     }
 
- 
+
 
 
 }
 
- 
+
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
-    #bookExpertModal .contact-one__btn.next-btn { 
-    text-transform: unset; 
+    #bookExpertModal .contact-one__right .contact-one__input-box .selectmenu, #bookExpertModal .contact-one__right .contact-one__input-box .nice-select {
+    padding: 10px 15px; 
+    font-size: 14px;
 }
-    #bookExpertModal .contact-one__btn.interested-btn { 
-    text-transform: unset; 
-}
-    #bookExpertModal .modal-title { 
-    font-size: 15px;
-}
-      #bookExpertModal .contact-one__right .contact-one__input-box .select-box {
-        width: 90%;
+
+    #bookExpertModal .contact-one__right .contact-one__input-box input {
+        height: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    .expert-intro-box {
+        margin-bottom: 0;
+    }
+
+    #bookExpertModal .contact-one__right .contact-one__input-box {
+        margin-bottom: 10px;
+    }
+
+    #bookExpertModal .contact-one__btn.next-btn {
+        text-transform: unset;
+    }
+
+    #bookExpertModal .contact-one__btn.interested-btn {
+        text-transform: unset;
+    }
+
+    #bookExpertModal .modal-title {
+        font-size: 15px;
+    }
+
+    #bookExpertModal .contact-one__right .contact-one__input-box .select-box {
+        width: 100%;
     }
 
     .blog-one {
