@@ -438,6 +438,10 @@
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+    #bookExpertModal .contact-one__right .contact-one__input-box .select-box {
+        width: 80%;
+    }
+
     .video-one {
         padding: 40px 0 100px;
     }
@@ -796,48 +800,28 @@
         padding-right: 15px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 }
 
-
-
-
-
-
-
-
-
+ 
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+
+    #bookExpertModal .contact-one__btn.next-btn { 
+    text-transform: unset; 
+}
+    #bookExpertModal .contact-one__btn.interested-btn { 
+    text-transform: unset; 
+}
+    #bookExpertModal .modal-title { 
+    font-size: 15px;
+}
+      #bookExpertModal .contact-one__right .contact-one__input-box .select-box {
+        width: 90%;
+    }
 
     .blog-one {
         padding: 30px 0 20px 0px;

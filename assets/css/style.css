@@ -252,6 +252,111 @@
    letter-spacing: -1.44px;
  }
 
+ #bookExpertModal .modal-title {
+   color: #333;
+   font-weight: 600;
+ }
+
+ #bookExpertModal .contact-one__right {
+   padding: 0px !important;
+ }
+
+ #bookExpertModal .contact-one__right .contact-one__input-box .selectmenu,
+ #bookExpertModal .contact-one__right .contact-one__input-box .nice-select {
+   padding: 13px 15px;
+   border-radius: 12px;
+   border: 1px solid #9dc33b;
+   background: #9dc33b;
+   color: #000;
+   font-weight: 500;
+   width: 100%;
+ }
+
+ #bookExpertModal .contact-one__right .contact-one__input-box .nice-select::after {
+   right: 15px;
+   border-color: #000;
+ }
+
+ #bookExpertModal .contact-one__right .contact-one__input-box {
+   margin-bottom: 25px;
+ }
+
+ #bookExpertModal .contact-one__right .contact-one__input-box h6 {
+   color: #282828;
+   font-weight: 600;
+   text-align: center;
+   background: #9dc33b;
+   padding: 12px 0;
+   border-radius: 8px;
+ }
+
+ #bookExpertModal .contact-one__right .contact-one__input-box textarea {
+   margin-bottom: 25px;
+   background: #fff;
+   border: 1px solid #9dc33b;
+   color: #000;
+   border-radius: 8px;
+ }
+
+ #bookExpertModal input,
+ #bookExpertModal .contact-one__right .contact-one__input-box .location-select.nice-select {
+   background: #fff;
+   color: #000;
+   border: 1px solid #9dc33b;
+   border-radius: 8px;
+ }
+
+ #bookExpertModal .contact-one__right .contact-one__input-box .select-box {
+   width: 50%;
+   margin: 0 auto;
+ }
+
+ #bookExpertModal #form-step-3 p {
+   color: #333 !important;
+   font-size: 15px !important;
+   line-height: 26px;
+ }
+
+ #bookExpertModal h4 {
+   font-size: 15px;
+   font-weight: 500;
+ }
+
+ #bookExpertModal .contact-one {
+   margin: 0;
+ }
+
+ #bookExpertModal .contact-one__right {
+   margin: 0;
+ }
+
+ #bookExpertModal .contact-one__btn {
+   padding: 5px 13px;
+   font-size: 13px;
+   text-transform: none;
+   font-weight: 500;
+   border-radius: 5px;
+ }
+
+ #bookExpertModal .contact-one__btn.next-btn {
+   padding: 5px 20px;
+   font-size: 13px;
+   color: #333;
+   text-transform: uppercase;
+   border: 1px solid #9dc33b;
+ }
+ #bookExpertModal .contact-one__btn.interested-btn {
+   padding: 5px 20px;
+   font-size: 13px; 
+   text-transform: uppercase;
+   border: 1px solid #dc3545;
+ }
+
+ #bookExpertModal .contact-one__btn.next-btn:hover {
+   border: 1px solid #9dc33b;
+   color: #000 !important;
+ }
+
  .section-title__title-abt {
    color: var(--erepair-white);
    font-size: 38px;

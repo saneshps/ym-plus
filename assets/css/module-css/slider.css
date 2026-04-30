@@ -237,6 +237,7 @@
     margin: 0 auto;
     height: 0;
     line-height: 0;
+    display: none;
 }
 
 .main-slider .owl-theme .owl-dots .owl-dot+.owl-dot {
@@ -279,6 +280,7 @@
     height: 0;
     line-height: 0;
     transform: translateY(-50%);
+    display: none;
 }
 
 .main-slider .owl-theme .owl-nav [class*=owl-] {
