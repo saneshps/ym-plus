@@ -86,6 +86,10 @@ body.boxed-wrapper .page-wrapper,
     border: 1px solid rgba(var(--erepair-white-rgb), .10);
     background-color: var(--erepair-black);
 }
+.services-two__icon img 
+{
+    width: 50px;
+}
 
 .testimonial-one__quote span {
     color: rgba(var(--erepair-white-rgb), 0.03);

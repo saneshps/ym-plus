@@ -11,9 +11,9 @@
     z-index: 1;
     margin: 90px 0 30px 0;
 }
-.process-one .end-to-end
- { 
-    padding: 70px 150px 10px 150px; 
+
+.process-one .end-to-end {
+    padding: 70px 150px 10px 150px;
 }
 
 .process-one__bg {
@@ -54,6 +54,10 @@
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
     z-index: 1;
+}
+
+.process-one__icon img {
+    width: 60px;
 }
 
 .process-one__single:hover .process-one__icon {
@@ -119,7 +123,7 @@
     line-height: 18px;
     font-weight: 600;
     counter-increment: count;
-    content: ""counter(count);
+    content: "" counter(count);
     color: var(--erepair-white);
     background-color: var(--erepair-base);
     height: 40px;

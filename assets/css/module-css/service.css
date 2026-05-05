@@ -50,6 +50,11 @@
     display: block;
     padding-right: 50px;
     margin-bottom: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .services-one__single::before {
@@ -75,6 +80,11 @@
     z-index: 1;
 }
 
+.services-one__icon img {
+    width: 70px;
+    height: 70px;
+}
+
 .services-one__icon:before {
     position: absolute;
     top: 0;
@@ -93,7 +103,7 @@
 }
 
 .services-one__single:hover .services-one__icon:before {
-    transform: scaleX(1);
+    transform: scale(1.3);
 }
 
 .services-one__icon span {
@@ -167,7 +177,7 @@
     border-radius: 20px;
     padding: 34px 30px 26px 100px;
     margin-bottom: 70px;
-    width: 90%; 
+    width: 90%;
 }
 
 .services-two__single.serv-detail {
