@@ -1,7 +1,7 @@
 /* Application Industries Carousel Styles */
 
 .application-industries {
-    padding: 60px 0; 
+    padding: 60px 0;
 }
 
 /* Carousel Wrapper */
@@ -22,7 +22,7 @@
 /* Individual Carousel Item */
 .app-industries-carousel-item {
     flex: 1;
-    min-width: 200px;
+    min-width: auto;
     height: 300px;
     position: relative;
     cursor: pointer;
@@ -34,14 +34,14 @@
 
 /* Active Item - Expanded State */
 .app-industries-carousel-item.active {
-    flex: 2.5;
+    flex: 6;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
 }
 
 /* Inactive Items - Collapsed State */
 .app-industries-carousel-item:not(.active) {
-    flex: 0.7;
+    flex: 2 2 !important;
     opacity: 0.6;
 }
 
@@ -62,13 +62,22 @@
     transform: scale(1);
 }
 
-/* Hover Effect for Inactive Items */
+/* Hover Effect for Inactive Items - Expand on hover */
 .app-industries-carousel-item:not(.active):hover {
-    opacity: 0.8;
+    flex: 2.2 !important;
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 /* Content Overlay for Active Item */
 .app-industries-carousel-item.active .carousel-item-content {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Show title on hover for inactive items too */
+.app-industries-carousel-item:not(.active):hover .carousel-item-content {
     opacity: 1;
     pointer-events: auto;
 }
@@ -246,7 +255,7 @@
     }
 
     .app-industries-carousel-item.active {
-        flex: 2;
+        flex: 7;
     }
 
     .app-industries-carousel-item:not(.active) {
@@ -313,7 +322,7 @@
     }
 
     .app-industries-carousel-item.active {
-        flex: 1.8;
+        flex: 12;
     }
 
     .app-industries-carousel-item:not(.active) {

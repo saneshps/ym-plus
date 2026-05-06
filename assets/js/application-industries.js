@@ -32,6 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (prevBtn) prevBtn.addEventListener('click', prevSlide);
         if (nextBtn) nextBtn.addEventListener('click', nextSlide);
 
+        // Click on any item to activate it
+        items.forEach((item, index) => {
+            item.addEventListener('click', () => goToSlide(index));
+        });
+
         // Keyboard navigation
         document.addEventListener('keydown', handleKeyboard);
 
