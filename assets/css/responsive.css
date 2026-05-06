@@ -810,10 +810,11 @@
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
-    #bookExpertModal .contact-one__right .contact-one__input-box .selectmenu, #bookExpertModal .contact-one__right .contact-one__input-box .nice-select {
-    padding: 10px 15px; 
-    font-size: 14px;
-}
+    #bookExpertModal .contact-one__right .contact-one__input-box .selectmenu,
+    #bookExpertModal .contact-one__right .contact-one__input-box .nice-select {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
 
     #bookExpertModal .contact-one__right .contact-one__input-box input {
         height: 40px;
@@ -1785,12 +1786,23 @@
 # Slider All Responsice Css
 --------------------------------------------------------------*/
 @media only screen and (min-width: 1220px) and (max-width: 1370px) {
+
+    .main-slider .item {
+        padding-top: 85px;
+        padding-bottom: 10px;
+    }
+
     .container {
         max-width: 1180px;
     }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1319px) {
+
+    .main-slider .item {
+        padding-top: 75px;
+        padding-bottom: 10px;
+    }
 
     .main-slider {
         padding: 0 0 80px 0;
@@ -1856,6 +1868,11 @@
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .main-slider .item {
+        padding-top: 75px;
+        padding-bottom: 10px;
+    }
 
     .main-menu-two__top-inner .main-menu-two__top-left .main-menu-two__text {
         display: none;
@@ -1957,6 +1974,11 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .main-slider .item {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
 
     .main-menu-two__top-inner .main-menu-two__top-left .main-menu-two__text {
         display: none;
@@ -2142,7 +2164,8 @@
     }
 
     .main-slider .item {
-        padding-top: 115px;
+        padding-top: 50px;
+        padding-bottom: 40px;
     }
 
 
@@ -2288,7 +2311,7 @@
 
 @media only screen and (min-width: 1320px) and (max-width: 1550px) {
 
-    .services-two__single { 
+    .services-two__single {
         margin-bottom: 60px;
     }
 
