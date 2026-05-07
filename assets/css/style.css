@@ -373,7 +373,7 @@
 
  .expert-intro-box {
    background: linear-gradient(145deg, #ffffff, #f0f8f5);  
-   padding: 50px 0px; 
+   padding:  0px; 
    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
  }
  #bookExpertModal .btn-close
