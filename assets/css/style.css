@@ -317,8 +317,8 @@
  }
 
  #bookExpertModal h4 {
-   font-size: 15px;
-   font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
  }
 
  #bookExpertModal .contact-one {
@@ -372,12 +372,18 @@
  }
 
  .expert-intro-box {
-   background: linear-gradient(145deg, #ffffff, #f0f8f5);
-   border: 1px solid #e1eee8;
-   border-radius: 24px;
-   padding: 35px 10px;
-   margin-bottom: 30px;
+   background: linear-gradient(145deg, #ffffff, #f0f8f5);  
+   padding: 50px 0px; 
    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+ }
+ #bookExpertModal .btn-close
+ {
+  color: #333;
+  opacity: 1;
+  border: 1px solid #333;
+  border-radius: 50%;
+  font-size: 11px;
+  padding: 8px;
  }
 
  .expert-title-text {
