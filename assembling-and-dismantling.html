@@ -291,8 +291,8 @@
                                 </ul>
                             </div>
                             <div class="project-details__get-started">
-                                <h3 class="project-details__get-started-title">Get Started Today</h3>
-                                <p class="project-details__get-started-text">Pianissimos of dulcimers qui therefore
+                                <!-- <h3 class="project-details__get-started-title">Get Started Today</h3> -->
+                                <!-- <p class="project-details__get-started-text">Pianissimos of dulcimers qui therefore
                                     always
                                     holds in these matters to this principle</p>
                                 <ul class="project-details__get-started-points list-unstyled">
@@ -319,9 +319,13 @@
                                             SHARJAH | UAE
                                         </p>
                                     </li>
-                                </ul>
+                                </ul> -->
                                 <div class="project-details__get-started-btn-box">
-                                    <a href="#" class="project-details__get-started-btn thm-btn">get in touch</a>
+                                    <button type="button"
+                                        class="main-slider__btn thm-btn w-100 d-flex justify-content-center"
+                                        data-bs-toggle="modal" data-bs-target="#bookExpertModal" style="border: none;">
+                                        Book our Service
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -367,6 +371,374 @@
     <!-- template js -->
     <script src="assets/js/components.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <!-- Book Expert Modal -->
+    <div class="modal fade" id="bookExpertModal" tabindex="-1" aria-labelledby="bookExpertModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookExpertModalLabel"> Book our Service </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-one" style="padding: 0;">
+                        <div class="contact-one__right"
+                            style="padding: 20px; background: transparent; box-shadow: none;">
+                            <form class="contact-form-validated contact-one__form" id="bookExpertForm"
+                                action="https://unicktheme.com/erepair/main-html/assets/inc/sendemail.php" method="post"
+                                novalidate="novalidate" enctype="multipart/form-data">
+
+                                <!-- Step 1 -->
+                                <div id="form-step-1">
+                                    <div class="row align-items-center expert-intro-box" id="expert-intro-box-wrap">
+                                        <div class="col-md-6 text-center mb-4 mb-md-0" id="expert-img-col">
+                                            <div class="expert-img-wrapper">
+                                                <img src="assets/images/resources/expert_illustration.png"
+                                                    alt="Technical Expert" class="img-fluid"
+                                                    style="width: 100%; border-radius: 12px; animation: floatExpert 3.5s ease-in-out infinite;">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5" id="expert-form-col">
+                                            <div class="text-center text-md-start expert-text-wrapper">
+                                                <h4 class="expert-title-text">How can we help you?</h4>
+                                                <p class="expert-subtitle-text">Select a service below to get started
+                                                    with our expert assistance.</p>
+                                            </div>
+                                            <div class="contact-one__input-box mb-0">
+                                                <div class="select-box">
+                                                    <select class="selectmenu wide" id="expert_service_type"
+                                                        name="service_type" required>
+                                                        <option selected="selected" value="" disabled>Select Service
+                                                            Type</option>
+                                                        <option value="AMC">AMC</option>
+                                                        <option value="Machine Repairing">Machine Repairing</option>
+                                                        <option value="Machine Installations">Machine Installations
+                                                        </option>
+                                                        <option value="Retrofitted Machines">Retrofitted Machines
+                                                        </option>
+                                                        <option value="Assembling and Dismantling">Assembling and
+                                                            Dismantling</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="step-1-fields" style="display: none;">
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="text" id="expert_company" name="company"
+                                                    placeholder="Company Name" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <div class="select-box" style="width: 100%; margin: 0;">
+                                                    <select class="selectmenu location-select wide" id="expert_location"
+                                                        name="location" required>
+                                                        <option selected="selected" value="" disabled>Location (Specify
+                                                            Emirates)</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                        <option value="Abu Dhabi">Abu Dhabi</option>
+                                                        <option value="Ajman">Ajman</option>
+                                                        <option value="Sharjah">Sharjah</option>
+                                                        <option value="Umm Al Quwain">Umm Al Quwain</option>
+                                                        <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                                                        <option value="Fujairah">Fujairah</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="text" name="website" placeholder="Website">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="text" id="expert_name" name="name"
+                                                    placeholder="Contact Name" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="text" id="expert_position" name="position"
+                                                    placeholder="Position" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="email" id="expert_email" name="email"
+                                                    placeholder="Email ID" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="text" id="expert_phone" name="Phone"
+                                                    placeholder="Mobile Number" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12">
+                                            <div class="contact-one__btn-box d-flex justify-content-center gap-3">
+                                                <button type="button" class="thm-btn contact-one__btn"
+                                                    style="background-color: #6c757d;"
+                                                    id="back-to-service-btn">Back</button>
+                                                <button type="button" class="thm-btn contact-one__btn next-btn"
+                                                    id="next-step-btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Step 2 -->
+                                <div id="form-step-2" style="display: none;">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <h6> Machine Type </h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="text" name="brand" placeholder="Brand" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="text" name="origin_country" placeholder="Origin Country"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="text" name="manufacturing_year"
+                                                    placeholder="Manufacturing Year" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <input type="text" name="model_number" placeholder="Model Number"
+                                                    required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-12 col-lg-12 col-md-12">
+                                            <div class="contact-one__input-box">
+                                                <textarea id="expert_message" name="Message"
+                                                    placeholder="Describe the job in detail" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12">
+                                            <div class="contact-one__input-box" style="margin-bottom: 20px;">
+                                                <label
+                                                    style="display: block; margin-bottom: 5px; color: var(--erepair-gray);">Upload
+                                                    Photos:</label>
+                                                <input type="file" name="photos" multiple accept="image/*"
+                                                    style="width: 100%; border: 1px solid var(--erepair-bdr-color); padding: 10px; background-color: var(--erepair-extra-light);">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 d-flex justify-content-center gap-3">
+                                            <div class="contact-one__btn-box">
+                                                <button type="button" class="thm-btn contact-one__btn next-btn"
+                                                    id="prev-step-btn">Back</button>
+                                            </div>
+                                            <div class="contact-one__btn-box">
+                                                <button type="submit" class="thm-btn contact-one__btn next-btn"
+                                                    id="submit-expert-form"> Submit Appointment</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Step 3 (Success) -->
+                                <div id="form-step-3" style="display: none; text-align: center; padding: 30px 10px;">
+                                    <h4 style="margin-bottom: 20px; color: var(--erepair-black);"> Let’s get this done
+                                        right</h4>
+                                    <p style="margin-bottom: 30px; font-size: 16px; color: var(--erepair-gray);">
+                                        To ensure we recommend the right solution and avoid unnecessary costs, our
+                                        expert will first inspect your machine.
+                                    </p>
+                                    <p style="margin-bottom: 30px; font-size: 16px; color: var(--erepair-gray);">
+                                        The inspection fee is AED <span id="inspection-fee-amount"> 100</span>, fully
+                                        adjustable if you go ahead with the job.
+                                    </p>
+                                    <!-- <p style="margin-bottom: 30px; font-size: 16px; color: var(--erepair-gray);">
+                                        To understand better so we can plan the job well, we will need to inspect the
+                                        machine. There is an inspection fee of <span
+                                            id="inspection-fee-amount">50</span> AED.
+                                    </p> -->
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <a href="#" class="thm-btn contact-one__btn next-btn"> Book Inspection Now </a>
+                                        <button type="button" class="thm-btn contact-one__btn interested-btn"
+                                            data-bs-dismiss="modal" style="background-color: #dc3545; ">Not Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <script>
+                                $(document).ready(function () {
+                                    // Handle service type dropdown to show rest of the fields
+                                    $('#expert_service_type').on('change selectmenuchange', function () {
+                                        let selectedVal = $(this).val();
+                                        if (selectedVal !== '') {
+                                            $('#step-1-fields').fadeIn();
+                                            $('#expert-intro-box-wrap').slideUp();
+                                            if (selectedVal === 'Machine Repairing') {
+                                                $('#expert_message').attr('placeholder', 'Describe the problem');
+                                            } else {
+                                                $('#expert_message').attr('placeholder', 'Describe the job in detail');
+                                            }
+                                        } else {
+                                            $('#step-1-fields').hide();
+                                            $('#expert-intro-box-wrap').slideDown();
+                                        }
+                                    });
+
+                                    document.getElementById('next-step-btn').addEventListener('click', function () {
+                                        // Simple validation for step 1
+                                        let valid = true;
+
+                                        // Check if service type is selected first
+                                        let serviceSelect = document.getElementById('expert_service_type');
+                                        if (!serviceSelect.value) {
+                                            // Handle special borders if selectmenu or nice-select is active
+                                            let niceSelect = serviceSelect.nextElementSibling;
+                                            if (niceSelect && niceSelect.classList.contains('nice-select')) {
+                                                niceSelect.style.border = '1px solid red';
+                                            } else {
+                                                serviceSelect.style.border = '1px solid red';
+                                            }
+                                            valid = false;
+                                        } else {
+                                            let niceSelect = serviceSelect.nextElementSibling;
+                                            if (niceSelect && niceSelect.classList.contains('nice-select')) {
+                                                niceSelect.style.border = '';
+                                            } else {
+                                                serviceSelect.style.border = '';
+                                            }
+                                        }
+
+                                        ['expert_company', 'expert_location', 'expert_name', 'expert_position', 'expert_email', 'expert_phone'].forEach(function (id) {
+                                            let el = document.getElementById(id);
+                                            let niceSelect = el.tagName === 'SELECT' ? el.nextElementSibling : null;
+
+                                            if (!el.value) {
+                                                if (niceSelect && niceSelect.classList.contains('nice-select')) {
+                                                    niceSelect.style.border = '1px solid red';
+                                                } else {
+                                                    el.style.border = '1px solid red';
+                                                }
+                                                valid = false;
+                                            } else {
+                                                if (niceSelect && niceSelect.classList.contains('nice-select')) {
+                                                    niceSelect.style.border = '';
+                                                } else {
+                                                    el.style.border = '';
+                                                }
+                                            }
+                                        });
+
+                                        if (valid) {
+                                            document.getElementById('form-step-1').style.display = 'none';
+                                            document.getElementById('form-step-2').style.display = 'block';
+                                        } else {
+                                            alert('Please fill out all required fields in this step.');
+                                        }
+                                    });
+
+                                    document.getElementById('back-to-service-btn').addEventListener('click', function () {
+                                        $('#step-1-fields').hide();
+                                        $('#expert-intro-box-wrap').slideDown();
+
+                                        // Reset the select dropdown to allow re-selection
+                                        let serviceSelect = document.getElementById('expert_service_type');
+                                        serviceSelect.value = '';
+
+                                        // Update nice-select if present
+                                        let niceSelect = serviceSelect.nextElementSibling;
+                                        if (niceSelect && niceSelect.classList.contains('nice-select')) {
+                                            $(serviceSelect).niceSelect('update');
+                                        }
+
+                                        // Update selectmenu if present
+                                        if ($.fn.selectmenu) {
+                                            try { $(serviceSelect).selectmenu('refresh'); } catch (e) { }
+                                        }
+                                    });
+
+                                    document.getElementById('prev-step-btn').addEventListener('click', function () {
+                                        document.getElementById('form-step-2').style.display = 'none';
+                                        document.getElementById('form-step-1').style.display = 'block';
+                                    });
+
+                                    document.getElementById('bookExpertForm').addEventListener('submit', function (e) {
+                                        e.preventDefault(); // Stop normal form submission to show the popup
+
+                                        // Simple validation for step 2
+                                        let machine = document.getElementById('expert_machine');
+                                        if (machine && !machine.value) {
+                                            machine.style.border = '1px solid red';
+                                            alert('Please fill out the Machine Type.');
+                                            return;
+                                        }
+
+                                        // Update inspection fee based on location
+                                        let locationSelect = document.getElementById('expert_location');
+                                        let fee = (locationSelect && locationSelect.value === 'Abu Dhabi') ? '100' : '100';
+                                        document.getElementById('inspection-fee-amount').innerText = fee;
+
+                                        // Simulate form submission
+                                        document.getElementById('form-step-2').style.display = 'none';
+                                        document.getElementById('form-step-3').style.display = 'block';
+                                    });
+
+                                    // Reset form when modal is closed
+                                    document.getElementById('bookExpertModal').addEventListener('hidden.bs.modal', function () {
+                                        document.getElementById('form-step-1').style.display = 'block';
+                                        document.getElementById('form-step-2').style.display = 'none';
+                                        document.getElementById('form-step-3').style.display = 'none';
+                                        document.getElementById('step-1-fields').style.display = 'none';
+                                        $('#expert-intro-box-wrap').show();
+                                        document.getElementById('bookExpertForm').reset();
+
+                                        // Reset borders
+                                        ['expert_company', 'expert_location', 'expert_name', 'expert_position', 'expert_email', 'expert_phone', 'expert_machine'].forEach(function (id) {
+                                            let el = document.getElementById(id);
+                                            if (el) {
+                                                el.style.border = '';
+                                                if (el.tagName === 'SELECT') {
+                                                    let niceSelect = el.nextElementSibling;
+                                                    if (niceSelect && niceSelect.classList.contains('nice-select')) {
+                                                        niceSelect.style.border = '';
+                                                    }
+                                                }
+                                            }
+                                        });
+                                        let serviceSelect = document.getElementById('expert_service_type');
+                                        let niceSelect = serviceSelect.nextElementSibling;
+                                        if (niceSelect && niceSelect.classList.contains('nice-select')) {
+                                            niceSelect.style.border = '';
+                                        } else {
+                                            serviceSelect.style.border = '';
+                                        }
+
+                                        // Refresh select dropdowns if applicable
+                                        if ($.fn.niceSelect) {
+                                            $('select').niceSelect('update');
+                                        }
+                                        if ($.fn.selectmenu) {
+                                            try { $('select.selectmenu').selectmenu('refresh'); } catch (e) { }
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

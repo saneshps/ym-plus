@@ -103,12 +103,12 @@
     color: var(--erepair-white);
 }
 
-.project-one__arrow a:hover { 
+.project-one__arrow a:hover {
     color: var(--erepair-black);
 }
 
 .project-one__content {
-    padding: 16px 30px 19px; 
+    padding: 16px 30px 19px;
 }
 
 .project-one__single:hover .project-one__content {
@@ -546,7 +546,7 @@
     display: block;
     background-color: #232323;
     border-radius: 20px;
-    padding: 40px 40px 40px;
+    padding: 10px 40px 40px;
 }
 
 .project-details__get-started-title {
@@ -613,6 +613,8 @@
 
 .project-details__get-started-btn-box a {
     border: 1px solid var(--erepair-base);
+    font-size: 17px;
+    font-weight: 700;
 }
 
 

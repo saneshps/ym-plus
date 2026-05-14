@@ -110,7 +110,7 @@
                             </p>
                             <div class="main-slider__btn-box gap-3 d-flex">
                                 <button type="button" class="main-slider__btn thm-btn" data-bs-toggle="modal"
-                                    data-bs-target="#bookExpertModal" style="border: none;"> Book Our Expert </button>
+                                    data-bs-target="#bookExpertModal" style="border: none;"> Book our Service </button>
                             </div>
                         </div>
                     </div>
@@ -405,7 +405,7 @@
                                         <span class="icon-technician-1"></span>
                                     </div>
                                     <div class="counter-two__count-box">
-                                        <h3 class="odometer" data-count="60">00</h3>
+                                        <h3 class="odometer" data-count="20">00</h3>
                                         <span>+</span>
                                     </div>
                                     <p class="counter-two__text">Expert Team Member</p>
@@ -433,7 +433,7 @@
                                         <span class="icon-happy-customer"></span>
                                     </div>
                                     <div class="counter-two__count-box">
-                                        <h3 class="odometer" data-count="760">00</h3>
+                                        <h3 class="odometer" data-count="150">00</h3>
                                         <span>+</span>
                                     </div>
                                     <p class="counter-two__text">Happy Customer</p>
@@ -447,7 +447,7 @@
                                         <span class="icon-hands-on-experience"></span>
                                     </div>
                                     <div class="counter-two__count-box">
-                                        <h3 class="odometer" data-count="11">00</h3>
+                                        <h3 class="odometer" data-count="12">00</h3>
                                         <span>+</span>
                                     </div>
                                     <p class="counter-two__text">Years of experience</p>
@@ -608,7 +608,7 @@
                                 <h3 class="services-two__title"><a> Cost-efficient </a>
                                 </h3>
                                 <p class="services-two__text"> Our machinery maintenance services help reduce downtime
-                                    and enhance machinery lifespan, while maintaining coast-efficiency.
+                                    and enhance machinery lifespan, while maintaining cost-efficiency.
 
                                 </p>
 
@@ -684,7 +684,7 @@
                         <span class="section-title-three__tagline"> Industries we serve </span>
                         <div class="section-title-three__tagline-shape"></div>
                     </div>
-                    <h2 class="section-title-three__title title-animation"> Industrial Applications </h2>
+                    <h2 class="section-title-three__title title-animation"> Industries Applications </h2>
                 </div>
 
                 <!-- Application Industries Carousel -->
@@ -1018,7 +1018,7 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="bookExpertModalLabel">Book Our Expert</h5>
+                    <h5 class="modal-title" id="bookExpertModalLabel"> Book our Service </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -1165,7 +1165,7 @@
                                         <div class="col-xl-12 col-lg-12 col-md-12">
                                             <div class="contact-one__input-box">
                                                 <textarea id="expert_message" name="Message"
-                                                    placeholder="Describe the matter" required></textarea>
+                                                    placeholder="Describe the job in detail" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12">
@@ -1192,18 +1192,26 @@
 
                                 <!-- Step 3 (Success) -->
                                 <div id="form-step-3" style="display: none; text-align: center; padding: 30px 10px;">
-                                    <h4 style="margin-bottom: 20px; color: var(--erepair-black);">Thank you for
-                                        submitting the info.</h4>
+                                    <h4 style="margin-bottom: 20px; color: var(--erepair-black);"> Let’s get this done
+                                        right</h4>
                                     <p style="margin-bottom: 30px; font-size: 16px; color: var(--erepair-gray);">
+                                        To ensure we recommend the right solution and avoid unnecessary costs, our
+                                        expert will first inspect your machine.
+                                    </p>
+                                    <p style="margin-bottom: 30px; font-size: 16px; color: var(--erepair-gray);">
+                                        The inspection fee is AED <span id="inspection-fee-amount"> 100</span>, fully
+                                        adjustable if you go ahead with the job.
+                                    </p>
+                                    <!-- <p style="margin-bottom: 30px; font-size: 16px; color: var(--erepair-gray);">
                                         To understand better so we can plan the job well, we will need to inspect the
                                         machine. There is an inspection fee of <span
                                             id="inspection-fee-amount">50</span> AED.
-                                    </p>
+                                    </p> -->
                                     <div class="d-flex justify-content-center gap-3">
-                                        <a href="#" class="thm-btn contact-one__btn next-btn">Click here to pay</a>
+                                        <a href="#" class="thm-btn contact-one__btn next-btn"> Book Inspection Now </a>
                                         <button type="button" class="thm-btn contact-one__btn interested-btn"
-                                            data-bs-dismiss="modal" style="background-color: #dc3545; ">Not
-                                            interested</button>
+                                            data-bs-dismiss="modal" style="background-color: #dc3545; ">Not Now
+                                             </button>
                                     </div>
                                 </div>
                             </form>
@@ -1219,7 +1227,7 @@
                                             if (selectedVal === 'Machine Repairing') {
                                                 $('#expert_message').attr('placeholder', 'Describe the problem');
                                             } else {
-                                                $('#expert_message').attr('placeholder', 'Describe the matter');
+                                                $('#expert_message').attr('placeholder', 'Describe the job in detail');
                                             }
                                         } else {
                                             $('#step-1-fields').hide();
@@ -1317,7 +1325,7 @@
 
                                         // Update inspection fee based on location
                                         let locationSelect = document.getElementById('expert_location');
-                                        let fee = (locationSelect && locationSelect.value === 'Abu Dhabi') ? '100' : '50';
+                                        let fee = (locationSelect && locationSelect.value === 'Abu Dhabi') ? '100' : '100';
                                         document.getElementById('inspection-fee-amount').innerText = fee;
 
                                         // Simulate form submission
