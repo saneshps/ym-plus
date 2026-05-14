@@ -1194,12 +1194,12 @@
                                 <div id="form-step-3" style="display: none; text-align: center; padding: 30px 10px;">
                                     <h4 style="margin-bottom: 20px; color: var(--erepair-black);"> Let’s get this done
                                         right</h4>
-                                    <p style="margin-bottom: 30px; font-size: 16px; color: var(--erepair-gray);">
+                                    <p style="margin-bottom: 3px; font-size: 16px; color: var(--erepair-gray);">
                                         To ensure we recommend the right solution and avoid unnecessary costs, our
                                         expert will first inspect your machine.
                                     </p>
                                     <p style="margin-bottom: 30px; font-size: 16px; color: var(--erepair-gray);">
-                                        The inspection fee is AED <span id="inspection-fee-amount"> 100</span>, fully
+                                        The inspection fee is <span id="inspection-fee-amount">AED 100</span>, fully
                                         adjustable if you go ahead with the job.
                                     </p>
                                     <!-- <p style="margin-bottom: 30px; font-size: 16px; color: var(--erepair-gray);">
@@ -1211,7 +1211,7 @@
                                         <a href="#" class="thm-btn contact-one__btn next-btn"> Book Inspection Now </a>
                                         <button type="button" class="thm-btn contact-one__btn interested-btn"
                                             data-bs-dismiss="modal" style="background-color: #dc3545; ">Not Now
-                                             </button>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -1325,7 +1325,7 @@
 
                                         // Update inspection fee based on location
                                         let locationSelect = document.getElementById('expert_location');
-                                        let fee = (locationSelect && locationSelect.value === 'Abu Dhabi') ? '100' : '100';
+                                        let fee = (locationSelect && locationSelect.value === 'Abu Dhabi') ? 'AED 100' : 'AED 50';
                                         document.getElementById('inspection-fee-amount').innerText = fee;
 
                                         // Simulate form submission

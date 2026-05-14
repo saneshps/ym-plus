@@ -312,13 +312,24 @@
 
  #bookExpertModal #form-step-3 p {
    color: #333 !important;
-   font-size: 15px !important;
+   font-size: 16px !important;
    line-height: 26px;
+   width: 60%;
+   margin: 0 auto;
+ }
+
+ #bookExpertModal #form-step-3 p #inspection-fee-amount {
+   font-size: 15px !important;
+   font-weight: 600;
+   /* background: #9dc33b8c !important; */
+   padding: 3px 0px;
+   border-radius: 5px;
+   font-family: sans-serif;
  }
 
  #bookExpertModal h4 {
-  font-size: 18px;
-  font-weight: 600;
+   font-size: 22px;
+   font-weight: 600;
  }
 
  #bookExpertModal .contact-one {
@@ -330,24 +341,26 @@
  }
 
  #bookExpertModal .contact-one__btn {
-   padding: 5px 13px;
-   font-size: 13px;
-   text-transform: none;
-   font-weight: 500;
+   padding: 9px 15px;
+   font-size: 15px;
+   text-transform: uppercase;
+   font-weight: 600;
    border-radius: 5px;
  }
 
  #bookExpertModal .contact-one__btn.next-btn {
-   padding: 5px 20px;
-   font-size: 13px;
+   padding: 8px 20px;
+   font-size: 15px;
    color: #333;
    text-transform: uppercase;
    border: 1px solid #9dc33b;
+   font-weight: 600;
  }
 
  #bookExpertModal .contact-one__btn.interested-btn {
-   padding: 5px 20px;
-   font-size: 13px;
+   padding: 8px 20px;
+   font-size: 15px;
+   font-weight: 600;
    text-transform: uppercase;
    border: 1px solid #dc3545;
  }
@@ -372,18 +385,18 @@
  }
 
  .expert-intro-box {
-   background: linear-gradient(145deg, #ffffff, #f0f8f5);  
-   padding:  0px; 
+   background: linear-gradient(145deg, #ffffff, #f0f8f5);
+   padding: 0px;
    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
  }
- #bookExpertModal .btn-close
- {
-  color: #333;
-  opacity: 1;
-  border: 1px solid #333;
-  border-radius: 50%;
-  font-size: 11px;
-  padding: 8px;
+
+ #bookExpertModal .btn-close {
+   color: #333;
+   opacity: 1;
+   border: 1px solid #333;
+   border-radius: 50%;
+   font-size: 11px;
+   padding: 8px;
  }
 
  .expert-title-text {
@@ -395,8 +408,8 @@
  }
 
  .expert-subtitle-text {
-   font-size: 15px;
-   color: #5a7566;
+   font-size: 17px;
+   color: #1b1b1b;
    margin-bottom: 25px;
  }
 

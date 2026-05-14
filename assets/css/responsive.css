@@ -1801,6 +1801,11 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1319px) {
 
+           #bookExpertModal #form-step-3 p { 
+        width: 60%; 
+    }
+
+
     .main-slider .item {
         padding-top: 75px;
         padding-bottom: 10px;
@@ -1870,6 +1875,11 @@
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+       #bookExpertModal #form-step-3 p { 
+        width: 60%; 
+    }
+
 
     .main-slider .item {
         padding-top: 75px;
@@ -1977,6 +1987,11 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+       #bookExpertModal #form-step-3 p { 
+        width: 80%; 
+    }
+
 
     .main-slider .item {
         padding-top: 80px;
@@ -2097,6 +2112,11 @@
 
 
 @media only screen and (max-width: 767px) {
+
+       #bookExpertModal #form-step-3 p { 
+        width: 100%; 
+    }
+
 
 
     .project-one__single {
@@ -2246,6 +2266,10 @@
 }
 
 @media only screen and (max-width: 576px) {
+
+    #bookExpertModal #form-step-3 p { 
+        width: 100%; 
+    }
 
 
     .main-slider__text {
