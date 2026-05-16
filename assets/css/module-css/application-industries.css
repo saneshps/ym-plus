@@ -23,7 +23,7 @@
 .app-industries-carousel-item {
     flex: 1;
     min-width: auto;
-    height: 300px;
+    height: 400px;
     position: relative;
     cursor: pointer;
     overflow: hidden;
@@ -34,7 +34,7 @@
 
 /* Active Item - Expanded State */
 .app-industries-carousel-item.active {
-    flex: 6;
+    flex: 10;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
 }
@@ -191,6 +191,17 @@
 /* Responsive Design */
 
 /* Tablets and Small Desktops */
+
+@media (max-width: 1340px) {
+    .app-industries-carousel-item.active {
+        flex: 15;
+    } 
+
+    .app-industries-carousel-item {
+        height: 350px;
+    }
+}
+
 @media (max-width: 1024px) {
     .application-industries {
         padding: 50px 0;
@@ -205,7 +216,7 @@
     }
 
     .app-industries-carousel-item {
-        height: 250px;
+        height: 350px;
     }
 
     .app-industries-nav-prev {
@@ -251,11 +262,11 @@
     }
 
     .app-industries-carousel-item {
-        height: 220px;
+        height: 320px;
     }
 
     .app-industries-carousel-item.active {
-        flex: 7;
+        flex: 25;
     }
 
     .app-industries-carousel-item:not(.active) {
