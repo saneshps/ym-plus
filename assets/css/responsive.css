@@ -862,18 +862,27 @@
 
     #bookExpertModal .contact-one__btn.next-btn {
         text-transform: unset;
-        padding: 4px 8px;
+        padding: 4px 10px;
         font-size: 14px;
     }
 
     #bookExpertModal .contact-one__btn.interested-btn {
         text-transform: unset;
-        padding: 4px 8px;
+        padding: 4px 10px;
         font-size: 14px;
     }
 
     #bookExpertModal .modal-title {
-        font-size: 15px;
+        font-size: 22px;
+    }
+
+    #bookExpertModal .modal-content {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    #bookExpertModal .contact-one__btn {
+        text-transform: capitalize; 
     }
 
     #bookExpertModal .contact-one__right .contact-one__input-box .select-box {
@@ -2693,9 +2702,9 @@
 
 @media (max-width: 767px) {
 
-    .contact-three { 
-    padding: 0 0 50px; 
-}
+    .contact-three {
+        padding: 0 0 50px;
+    }
 
     .thm-btn {
         padding: 5px 16px 5px;
