@@ -23,6 +23,21 @@
     .services-one__service-list li:last-child .services-one__single {
         padding-left: 20px;
     }
+
+    .service-details__services-box { 
+        padding: 25px 20px 30px; 
+    }
+    .service-details__services-list li a { 
+        padding: 10px 18px 10px; 
+        font-size: 14px; 
+    }
+    .page-header__inner h3 {
+        font-size: 52px; 
+        width: 100%;
+    }
+    .blog-details { 
+        padding: 50px 0 120px; 
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1319px) {
