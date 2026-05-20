@@ -73,6 +73,38 @@
         padding-left: 20px;
     }
 
+    .service-details__services-box { 
+        padding: 25px 20px 30px; 
+    }
+    .service-details__services-list li a { 
+        padding: 10px 18px 10px; 
+        font-size: 14px; 
+    }
+    .page-header__inner h3 {
+        font-size: 52px; 
+        width: 100%;
+    }
+    .blog-details { 
+        padding: 50px 0 120px; 
+    }
+    .main-slider__img img {
+        width: 73% !important;
+    }
+    .services-home-card__text
+    {
+        font-size: 15px;
+    }
+
+    .services-home-card__title {
+        font-size: 20px; 
+        margin-bottom: 10px;
+        margin-top: 8px; 
+    }
+    .section-title__title { 
+        font-size: 36px;
+        line-height: 45px; 
+    }
+
     .services-one__title {
         font-size: 17px; 
     }
@@ -1977,7 +2009,8 @@
 
 
     .main-slider__img {
-        right: 110px;
+        right: 10px;
+        top: 0;
     }
 
     .main-slider__shape-1 {
